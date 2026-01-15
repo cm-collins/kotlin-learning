@@ -50,7 +50,7 @@ fun main () {
 //    println("The  of the sphere with the radius ${radius} is  ${volume}" + "cm3:")
 
 //    3:
-    val string  = "this is an example of a text"
-    println("Our string is  ${string.uppercase()}")
+//    val string  = "this is an example of a text"
+//    println("Our string is  ${string.uppercase()}")
 
 }
