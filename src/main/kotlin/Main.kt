@@ -39,13 +39,18 @@ fun main () {
 
 
 //    println("The result of x / y is ${x / y}")
+
     //Exercise , calculating the volume of a sphere (0.75 * pi * radius ^3)
 
-    val pi = 3.142857
-    val radius = 5.5
+//    val pi = 3.142857
+//    val radius = 5.5
+//
+//    val  volume =  (0.75 * pi  * (radius * radius * radius))
+//
+//    println("The  of the sphere with the radius ${radius} is  ${volume}" + "cm3:")
 
-    val  volume =  (0.75 * pi  * (radius * radius * radius))
-
-    println("The voulume of the sphere with the radius ${radius} is  ${volume}" + "cm3:")
+//    3:
+    val string  = "this is an example of a text"
+    println("Our string is  ${string.uppercase()}")
 
 }
