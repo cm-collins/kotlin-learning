@@ -42,6 +42,273 @@ fun String.isEmail(): Boolean { }
 
 ---
 
+## 1.1. File & Folder Naming Best Practices
+
+### Kotlin Source Files (.kt)
+
+```kotlin
+// ✅ GOOD: PascalCase matching class name
+// File: UserRepository.kt
+class UserRepository { }
+
+// File: DataSource.kt
+interface DataSource { }
+
+// ✅ GOOD: Descriptive names for utility files
+// File: StringExtensions.kt
+fun String.isEmail(): Boolean { }
+
+// File: DateUtils.kt
+fun formatDate(date: Date): String { }
+
+// ✅ GOOD: Multiple related top-level functions in one file
+// File: ValidationUtils.kt
+fun isValidEmail(email: String): Boolean { }
+fun isValidPhone(phone: String): Boolean { }
+
+// ❌ BAD: Generic or unclear names
+// File: Utils.kt  // Too generic
+// File: Helper.kt  // Unclear purpose
+// File: Stuff.kt  // Meaningless
+```
+
+### Test Files
+
+```kotlin
+// ✅ GOOD: Test file matches source file with Test suffix
+// Source: UserService.kt
+// Test: UserServiceTest.kt
+
+// ✅ GOOD: Descriptive test class names
+class UserServiceTest { }
+
+// ✅ GOOD: Integration tests clearly marked
+// File: UserRepositoryIntegrationTest.kt
+
+// ❌ BAD: Unclear test file names
+// File: Test1.kt
+// File: UserTest.kt  // Which User class?
+```
+
+### Folder/Directory Naming
+
+```
+// ✅ GOOD: lowercase with hyphens or camelCase (project-dependent)
+src/main/kotlin/
+  ├── domain/           # Business logic
+  ├── data/             # Data layer
+  ├── ui/               # UI components
+  ├── utils/            # Utility functions
+  └── di/               # Dependency injection
+
+// ✅ GOOD: Descriptive folder names
+src/main/kotlin/
+  ├── auth/
+  ├── user/
+  ├── payment/
+  └── common/
+
+// ✅ GOOD: Feature-based organization (Android)
+src/main/kotlin/
+  ├── feature/
+  │   ├── login/
+  │   ├── profile/
+  │   └── settings/
+
+// ❌ BAD: Unclear or generic folder names
+src/main/kotlin/
+  ├── stuff/      # Too vague
+  ├── temp/       # Temporary code shouldn't be committed
+  ├── old/        # Old code should be removed
+  └── misc/       # Everything goes here
+```
+
+### Resource Files
+
+```
+// ✅ GOOD: lowercase with underscores for resources
+res/
+  ├── drawable/
+  │   ├── ic_user_avatar.png
+  │   └── bg_login_screen.png
+  ├── layout/
+  │   ├── activity_main.xml
+  │   └── item_user_list.xml
+  └── values/
+      ├── strings.xml
+      └── colors.xml
+
+// ✅ GOOD: Descriptive resource names
+ic_user_profile_24dp.png
+btn_submit_primary.xml
+tv_welcome_message
+
+// ❌ BAD: Unclear resource names
+image1.png
+button1.xml
+text1
+```
+
+### Documentation Files
+
+```
+// ✅ GOOD: lowercase with hyphens for markdown files
+docs/
+  ├── getting-started.md
+  ├── api-reference.md
+  ├── kotlin-best-practices.md
+  └── notes/
+      ├── notes-kotlin.md
+      └── progress.md
+
+// ✅ GOOD: Clear, descriptive names
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+
+// ❌ BAD: Unclear documentation names
+doc1.md
+notes.txt
+readme.txt  // Should be README.md
+```
+
+### Learning/Educational Files
+
+```
+// ✅ GOOD: Consistent naming pattern for lessons
+lessons/
+  ├── Lesson01_Variables.kt
+  ├── Lesson02_Types.kt
+  ├── Lesson03_Operators.kt
+
+// ✅ GOOD: Clear exercise naming
+exercises/
+  ├── Exercise01_Palindrome.kt
+  ├── Exercise02_Anagrams.kt
+  └── solutions/
+      └── Exercise01_Palindrome.kt
+
+// ✅ GOOD: Numbered for ordering, descriptive topic name
+Lesson##_TopicName.kt
+Exercise##_Name.kt
+```
+
+### Package Structure
+
+```kotlin
+// ✅ GOOD: Reverse domain notation for packages
+package com.example.app.domain
+package com.example.app.data.repository
+package com.example.app.ui.component
+
+// ✅ GOOD: Feature-based packages
+package com.example.feature.auth
+package com.example.feature.profile
+
+// ✅ GOOD: Clear package hierarchy
+com.example.app/
+  ├── domain/
+  │   ├── model/
+  │   └── usecase/
+  ├── data/
+  │   ├── repository/
+  │   └── datasource/
+  └── ui/
+      ├── screen/
+      └── component/
+
+// ❌ BAD: Default package or unclear structure
+// (no package)  // Avoid default package
+package app  // Too generic
+package myapp  // Not following conventions
+```
+
+### Special Cases
+
+#### Android Projects
+
+```
+// ✅ GOOD: Android standard structure
+app/src/main/
+  ├── java/  or  kotlin/
+  │   └── com/example/app/
+  │       ├── MainActivity.kt
+  │       ├── ui/
+  │       └── data/
+  └── res/
+      ├── layout/
+      ├── drawable/
+      └── values/
+
+// ✅ GOOD: Activity/Fragment naming
+MainActivity.kt
+UserProfileFragment.kt
+LoginActivity.kt
+
+// ✅ GOOD: ViewModel naming
+UserViewModel.kt
+LoginViewModel.kt
+```
+
+#### Kotlin Multiplatform (KMP)
+
+```
+// ✅ GOOD: Source set organization
+commonMain/kotlin/
+  └── com/example/shared/
+      ├── domain/
+      └── data/
+
+androidMain/kotlin/
+  └── com/example/android/
+
+iosMain/kotlin/
+  └── com/example/ios/
+```
+
+### Naming Rules Summary
+
+| Type | Convention | Example |
+|------|------------|---------|
+| **Kotlin files** | PascalCase | `UserService.kt` |
+| **Test files** | PascalCase + Test | `UserServiceTest.kt` |
+| **Folders** | lowercase or camelCase | `domain/`, `userProfile/` |
+| **Resources** | lowercase_with_underscores | `ic_user_avatar.png` |
+| **Documentation** | lowercase-with-hyphens | `getting-started.md` |
+| **Lessons** | `Lesson##_Topic.kt` | `Lesson01_Variables.kt` |
+| **Exercises** | `Exercise##_Name.kt` | `Exercise01_Palindrome.kt` |
+| **Packages** | reverse.domain | `com.example.app` |
+
+### General Principles
+
+1. **Be Descriptive**: Names should clearly indicate purpose
+   - ✅ `UserRepository.kt`
+   - ❌ `Repo.kt`
+
+2. **Be Consistent**: Follow the same pattern throughout the project
+   - ✅ All lessons: `Lesson##_Topic.kt`
+   - ❌ Mixed: `Lesson1_Variables.kt`, `lesson-2-types.kt`
+
+3. **Avoid Abbreviations**: Unless widely understood
+   - ✅ `UserRepository.kt`
+   - ❌ `UsrRepo.kt`
+
+4. **Use Standard Extensions**: 
+   - `.kt` for Kotlin source files
+   - `.md` for markdown documentation
+   - `.xml` for Android layouts/resources
+
+5. **Avoid Special Characters**: 
+   - ✅ Use hyphens or underscores
+   - ❌ Avoid spaces, special chars: `my file.kt`
+
+6. **Keep It Short But Clear**:
+   - ✅ `PaymentService.kt`
+   - ❌ `PaymentProcessingServiceForECommercePlatform.kt`
+
+---
+
 ## 2. Variables & Immutability
 
 ### Prefer `val` over `var`
