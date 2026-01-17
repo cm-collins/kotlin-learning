@@ -50,6 +50,13 @@ fun main() {
 //    palindromeExample()
 
 
+    // ---------------------------------------------------------
+    // LESSON 9: Functions (null checking and user inputs)
+    // ---------------------------------------------------------
+    NUllValuesUserInput()
+    }
+
+
     /* ============================================================
    LESSON 1: DECLARING VARIABLES (val vs var)
    ============================================================ */
@@ -221,6 +228,16 @@ fun main() {
     /* ============================================================
    LESSON 8: NULL  VALUES And USER INPUTS
    ============================================================ */
+//    fun NUllValuesUserInput ()
+//    {
+//
+//        val userInput = readLine() //readline -> This is a nullable  method. always return a string
+////        println("You entered ${userInput?.uppercase()}") //first it should check if the string actually exist in the input
+//
+//        if (userInput != null)
+//            println("You entered ${userInput.toInt()  - 5}") //workign with the intergers
+//    }
 
-}
+
+
 
