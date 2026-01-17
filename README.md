@@ -113,7 +113,7 @@ kotlin-learning/
 
 ## Coding Standards for This Repo
 
-> 📖 **See [docs/kotlin-best-practices.md](docs/kotlin-best-practices.md) for comprehensive Kotlin best practices guide.**
+> 📖 **See [docs/kotlin-best-practices.md](docs/BestPractices/kotlin-best-practices.md) for comprehensive Kotlin best practices guide.**
 
 ### File conventions
 - Lessons: `Lesson##_TopicName.kt`
