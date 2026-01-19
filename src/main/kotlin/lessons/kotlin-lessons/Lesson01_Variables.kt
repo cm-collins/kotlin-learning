@@ -26,3 +26,4 @@ fun variablesExample() {
     val year = 2026         // Kotlin knows this is Int
     println("Country: $country, Year: $year\n")
 }
+us
