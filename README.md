@@ -67,24 +67,28 @@ kotlin-learning/
 ├── build.gradle.kts
 ├── settings.gradle.kts
 ├── docs/
-│   ├── progress.md
-│   ├── kotlin-best-practices.md    # ⭐ Best practices guide
-│   ├── notes-kotlin.md
-│   ├── notes-android.md
-│   ├── notes-compose.md
-│   ├── notes-testing.md
-│   └── notes-kmp.md
+│   ├── BestPractices/
+│   │   └── kotlin-best-practices.md    # ⭐ Best practices guide
+│   └── notes/
+│       ├── progress.md
+│       ├── notes-kotlin.md
+│       ├── notes-android.md
+│       ├── notes-compose.md
+│       ├── notes-testing.md
+│       └── notes-kmp.md
 ├── src/
 │   ├── main/
 │   │   ├── kotlin/
 │   │   │   ├── lessons/                   # Kotlin fundamentals (Phase A)
-│   │   │   │   ├── Lesson01_Variables.kt
-│   │   │   │   ├── Lesson02_Types.kt
-│   │   │   │   ├── Lesson03_Operators.kt
-│   │   │   │   ├── Lesson04_Functions.kt
-│   │   │   │   ├── Lesson05_ControlFlow.kt
-│   │   │   │   ├── Lesson06_NullSafety.kt
-│   │   │   │   └── ... (more lessons as you progress)
+│   │   │   │   └── kotlin-lessons/
+│   │   │   │       ├── Lesson01_Variables.kt
+│   │   │   │       ├── Lesson02_Types.kt
+│   │   │   │       ├── Lesson03_Operators.kt
+│   │   │   │       ├── Lesson04_Functions.kt
+│   │   │   │       ├── Lesson05_ControlFlow.kt
+│   │   │   │       ├── Lesson06_NullSafety.kt
+│   │   │   │       ├── Lesson07_Arrays.kt
+│   │   │   │       └── ... (more lessons as you progress)
 │   │   │   └── exercises/
 │   │   │       ├── Exercise01_Palindrome.kt
 │   │   │       ├── Exercise02_Anagrams.kt
@@ -113,7 +117,7 @@ kotlin-learning/
 
 ## Coding Standards for This Repo
 
-> 📖 **See [docs/kotlin-best-practices.md](docs/BestPractices/kotlin-best-practices.md) for comprehensive Kotlin best practices guide.**
+> 📖 **See [docs/BestPractices/kotlin-best-practices.md](docs/BestPractices/kotlin-best-practices.md) for the Kotlin best practices guide.**
 
 ### File conventions
 - Lessons: `Lesson##_TopicName.kt`
@@ -145,7 +149,7 @@ Exercises are where mastery happens. For each exercise:
 - Add tests (later stages).
 
 ### 3) Tracking progress
-Use the progress checklist below (copy to `docs/progress.md`).
+Use the progress checklist below (copy to `docs/notes/progress.md`).
 
 ---
 
@@ -268,7 +272,7 @@ Examples:
 
 ## Daily / Session Log Template (Optional)
 
-Copy into `docs/progress.md` or `docs/notes-kotlin.md`:
+Copy into `docs/notes/progress.md` or `docs/notes/notes-kotlin.md`:
 
 ### Session
 - Focus:
@@ -291,7 +295,7 @@ If you keep a single “notebook” file, use this pattern:
 
 ## Next Steps For This Repo (Recommended Order)
 
-1. Create `docs/progress.md` and paste the Progress Tracker.
+1. Create `docs/notes/progress.md` and paste the Progress Tracker.
 2. Create the `kotlin-fundamentals` module and split lessons into files.
 3. Add exercises + (later) add tests.
 4. Add your first Android Compose app module when Kotlin fundamentals are stable.

@@ -5,16 +5,17 @@
 
 ## Stage 1 — Kotlin Foundations (Language Core)
 
-- [x] Variables: `val` vs `var` → [Lesson01_Variables.kt](../src/main/kotlin/lessons/Lesson01_Variables.kt)
-- [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../src/main/kotlin/lessons/Lesson02_Types.kt)
+- [x] Variables: `val` vs `var` → [Lesson01_Variables.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson01_Variables.kt)
+- [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson02_Types.kt)
 - [ ] Strings: templates, common ops, formatting
-- [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/Lesson03_Operators.kt)
-- [x] Control flow: if/else, when, loops, ranges → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/Lesson05_ControlFlow.kt)
-- [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/Lesson04_Functions.kt)
+- [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson03_Operators.kt)
+- [x] Control flow: if/else, when, loops, ranges → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
+- [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
 - [ ] Scope functions: let/apply/run/also/with
+- [ ] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
 - [ ] Collections: List/Set/Map (mutable vs immutable)
 - [ ] Collections ops: map/filter/reduce/groupBy
-- [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/Lesson06_NullSafety.kt)
+- [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson06_NullSafety.kt)
 - [ ] Exceptions: try/catch, custom errors
 
 ## Stage 2 — Kotlin OOP + Modeling

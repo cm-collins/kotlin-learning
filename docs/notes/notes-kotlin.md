@@ -36,6 +36,19 @@ This file contains notes, insights, and key learnings from studying Kotlin funda
 - Parameters can have default values
 - Named arguments improve readability
 
+### Arrays
+- Arrays are **fixed-size** collections (can update elements, but can’t add/remove)
+- Two main types:
+  - `Array<T>` (e.g. `arrayOf("a", "b")`)
+  - Primitive arrays like `IntArray` (e.g. `intArrayOf(1, 2, 3)`)
+- Useful properties and helpers:
+  - `size`, `indices`, `getOrNull(index)` for safe access
+  - `joinToString()` for quick printing
+- Conversions:
+  - `array.toList()`
+  - `list.toTypedArray()`
+- Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt`
+
 ---
 
 ## Common Patterns
