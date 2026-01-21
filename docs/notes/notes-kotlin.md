@@ -36,6 +36,13 @@ This file contains notes, insights, and key learnings from studying Kotlin funda
 - Parameters can have default values
 - Named arguments improve readability
 
+### Control Flow (Loops)
+- `while` repeats while a condition is true
+  - **Always update the loop variable** (e.g., `count++` / `count--`) to avoid infinite loops
+- `do-while` runs **at least once** (checks the condition after the first run)
+- `break` exits the loop early; `continue` skips to the next iteration
+- Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt`
+
 ### Arrays
 - Arrays are **fixed-size** collections (can update elements, but can’t add/remove)
 - Two main types:

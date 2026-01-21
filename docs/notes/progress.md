@@ -9,7 +9,7 @@
 - [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson02_Types.kt)
 - [ ] Strings: templates, common ops, formatting
 - [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson03_Operators.kt)
-- [x] Control flow: if/else, when, loops, ranges → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
+- [x] Control flow: if/else, while/do-while, break/continue → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
 - [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
 - [ ] Scope functions: let/apply/run/also/with
 - [ ] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
