@@ -1,7 +1,7 @@
 /**
  * LESSON 5: CONTROL FLOW ============================================================
  *
- * Learn about conditional statements:
+ * Learn about conditional statements and loops:
  * - if / else if / else
  * - while loops
  * - do-while loops

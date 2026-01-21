@@ -8,6 +8,8 @@ This repo is built like a **learning notebook + project playground**:
 - You track progress using checklists.
 - You gradually evolve from Kotlin basics → Android → Jetpack Compose → Testing → KMP → CI/CD → Publishing.
 
+> 🚀 **New here?** Start with [docs/START_HERE.md](docs/START_HERE.md) for a complete getting-started guide!
+
 ---
 
 ## Goals
@@ -97,15 +99,15 @@ kotlin-learning/
 │   │   └── resources/
 │   └── test/
 │       └── kotlin/
-├── android-apps/                 # Android module(s) (Phase B) - Future
+├── android-apps/                 # 📁 Planned (Phase B - not created yet)
 │   ├── compose-starter/
 │   ├── offline-first-notes/
 │   └── ...
-├── kmp-apps/                    # KMP projects (Phase C) - Future
+├── kmp-apps/                    # 📁 Planned (Phase C - not created yet)
 │   ├── shared-core/             # shared module (commonMain)
 │   ├── androidApp/
 │   └── iosApp/
-└── tools/                        # Future
+└── tools/                        # 📁 Planned (not created yet)
     ├── scripts/
     └── ci/
 ```
