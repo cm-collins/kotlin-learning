@@ -9,10 +9,16 @@
  */
 fun main() {
     // If statements (already covered earlier)
-    // ifConditionsExample()
+     ifConditionsExample()
 
     // While loops (current focus)
-    whileLoopsExample()
+     whileLoopsExample()
+
+    // Interactive example: while loop with user input
+    interactiveWhileExample()
+
+    //guess the number exxamle
+    guessTheNumber()
 }
 
 /* ============================================================
@@ -82,4 +88,80 @@ fun whileLoopsExample() {
     }
 
     println("Sum after while loop = $sum (stopped when sum >= 15 or array ended)")
+}
+
+/* ============================================================
+INTERACTIVE EXAMPLE: USER INPUT WITH WHILE LOOP
+============================================================ */
+fun interactiveWhileExample() {
+    println("=== Simple Calculator ===")
+    println("Enter numbers to add them up.")
+    println("Type 'done' when finished.\n")
+
+    var total = 0.0
+    var keepGoing = true
+
+    while (keepGoing) {
+        print("Enter a number (or 'done' to finish): ")
+        val input = readLine()
+
+        when {
+            input == null || input.trim().isEmpty() -> {
+                println("Please enter something!")
+            }
+            input.trim().lowercase() == "done" -> {
+                keepGoing = false
+                println("\n✅ Calculation finished!")
+            }
+            else -> {
+                // Try to convert input to a number
+                val number = input.toDoubleOrNull()
+                if (number != null) {
+                    total += number
+                    println("   Added $number. Current total: $total")
+                } else {
+                    println("   ❌ '$input' is not a valid number. Try again.")
+                }
+            }
+        }
+    }
+
+    println("Final total: $total")
+
+    // Alternative example: Simple number guessing game (commented out)
+    // guessTheNumber()
+}
+
+/* ============================================================
+BONUS: NUMBER GUESSING GAME
+============================================================ */
+fun guessTheNumber() {
+    println("\n=== Guess the Number Game ===")
+    println("I'm thinking of a number between 1 and 10.")
+
+    val secretNumber = (1..10).random() // Random number between 1 and 10
+    var attempts = 0
+    var guessed = false
+
+    while (!guessed) {
+        print("Your guess: ")
+        val input = readLine()
+        val guess = input?.toIntOrNull()
+
+        if (guess == null) {
+            println("Please enter a valid number!")
+            continue
+        }
+
+        attempts++
+
+        when {
+            guess < secretNumber -> println("Too low! Try again.")
+            guess > secretNumber -> println("Too high! Try again.")
+            else -> {
+                guessed = true
+                println("🎉 Correct! You guessed it in $attempts attempts!")
+            }
+        }
+    }
 }
