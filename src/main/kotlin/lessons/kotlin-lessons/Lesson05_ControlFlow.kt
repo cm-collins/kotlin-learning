@@ -1,29 +1,97 @@
 /**
- * LESSON 5: CONTROL FLOW ============================================================
- *
- * Learn about conditional statements and loops:
+ * LESSON 5: CONTROL FLOW
+ * ============================================================
+ * 
+ * Learn about conditional statements and control flow:
  * - if / else if / else
+ * - when (as a statement + as an expression)
  * - while loops
  * - do-while loops
  * - break / continue
  */
 fun main() {
-    // If statements (already covered earlier)
-     ifConditionsExample()
+    // ============================================================
+    // Current focus: WHEN
+    // ============================================================
+    whenExamples()
 
-    // While loops (current focus)
-     whileLoopsExample()
+    // Optional (interactive) — uncomment when you want to type input:
+    interactiveWhenExample()
 
-    // Interactive example: while loop with user input
+    // ============================================================
+    // Other control-flow examples (available, but not the focus right now)
+    // ============================================================
+    ifConditionsExample()
+    whileLoopsExample()
     interactiveWhileExample()
-
-    //guess the number exxamle
     guessTheNumber()
 }
 
 /* ============================================================
-IF CONDITIONS
-============================================================ */
+   WHEN (Kotlin’s powerful switch-like expression)
+   ============================================================ */
+fun whenExamples() {
+    // 1) when with a value (similar to switch-case)
+    val dayNumber = 3
+    val dayName = when (dayNumber) {
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        4 -> "Thursday"
+        5 -> "Friday"
+        6, 7 -> "Weekend"
+        else -> "Invalid day"
+    }
+    println("Day $dayNumber -> $dayName")
+
+    // 2) when as an expression (returns a value)
+    val statusCode = 404
+    val message = when (statusCode) {
+        200 -> "OK"
+        201 -> "Created"
+        400 -> "Bad Request"
+        401, 403 -> "Unauthorized/Forbidden"
+        404 -> "Not Found"
+        in 500..599 -> "Server Error"
+        else -> "Unknown"
+    }
+    println("HTTP $statusCode -> $message")
+
+    // 3) when with ranges (great for grading / categories)
+    val score = 86
+    val grade = when (score) {
+        in 90..100 -> "A"
+        in 80..89 -> "B"
+        in 70..79 -> "C"
+        in 60..69 -> "D"
+        in 0..59 -> "F"
+        else -> "Invalid score"
+    }
+    println("Score $score -> Grade $grade")
+
+    // 4) when without an argument (use boolean conditions)
+    val temperature = 29
+    val weather = when {
+        temperature < 0 -> "Freezing"
+        temperature in 0..15 -> "Cold"
+        temperature in 16..25 -> "Warm"
+        else -> "Hot"
+    }
+    println("Temp $temperature°C -> $weather")
+
+    // 5) when with type checks (smart casts)
+    val anyValue: Any = "Kotlin"
+    val description = when (anyValue) {
+        is String -> "String of length ${anyValue.length}"
+        is Int -> "Int doubled = ${anyValue * 2}"
+        else -> "Unknown type"
+    }
+    println("anyValue -> $description\n")
+}
+
+/* ============================================================
+   IF CONDITIONS
+   ============================================================ */
 fun ifConditionsExample() {
     val x = 7
     val y = 7
@@ -38,9 +106,10 @@ fun ifConditionsExample() {
 
     println("This line always runs\n")
 }
+
 /* ============================================================
-WHILE LOOPS
-============================================================ */
+   WHILE LOOPS
+   ============================================================ */
 fun whileLoopsExample() {
     // 1) Basic while loop (runs while condition is true)
     var count = 1
@@ -91,8 +160,8 @@ fun whileLoopsExample() {
 }
 
 /* ============================================================
-INTERACTIVE EXAMPLE: USER INPUT WITH WHILE LOOP
-============================================================ */
+   INTERACTIVE EXAMPLE: USER INPUT WITH WHILE LOOP
+   ============================================================ */
 fun interactiveWhileExample() {
     println("=== Simple Calculator ===")
     println("Enter numbers to add them up.")
@@ -133,8 +202,8 @@ fun interactiveWhileExample() {
 }
 
 /* ============================================================
-BONUS: NUMBER GUESSING GAME
-============================================================ */
+   BONUS: NUMBER GUESSING GAME
+   ============================================================ */
 fun guessTheNumber() {
     println("\n=== Guess the Number Game ===")
     println("I'm thinking of a number between 1 and 10.")
@@ -164,4 +233,27 @@ fun guessTheNumber() {
             }
         }
     }
+}
+
+/* ============================================================
+   OPTIONAL: INTERACTIVE WHEN EXAMPLE (USER INPUT)
+   ============================================================ */
+fun interactiveWhenExample() {
+    println("=== Grade Calculator (when + ranges) ===")
+    print("Enter your score (0-100): ")
+
+    val input = readLine()?.trim()
+    val score = input?.toIntOrNull()
+
+    val grade = when {
+        score == null -> "Invalid input (not a number)"
+        score !in 0..100 -> "Invalid score (must be 0-100)"
+        score in 90..100 -> "A"
+        score in 80..89 -> "B"
+        score in 70..79 -> "C"
+        score in 60..69 -> "D"
+        else -> "F"
+    }
+
+    println("Result: $grade")
 }

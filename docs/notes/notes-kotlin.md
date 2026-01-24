@@ -41,12 +41,16 @@ This file contains notes, insights, and key learnings from studying Kotlin funda
 - Parameters can have default values
 - Named arguments improve readability
 
-### Control Flow (Loops)
+### Control Flow (Loops + when)
 
 - `while` repeats while a condition is true
   - **Always update the loop variable** (e.g., `count++` / `count--`) to avoid infinite loops
 - `do-while` runs **at least once** (checks the condition after the first run)
 - `break` exits the loop early; `continue` skips to the next iteration
+- `when` is Kotlin’s powerful alternative to switch:
+  - `when(value) { ... }` matches values, multiple options, and ranges (`in 1..5`)
+  - `when { ... }` matches boolean conditions (like an if/else chain)
+  - `when` can be an **expression** (return a value into a `val`)
 - Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt`
 
 ### Arrays
