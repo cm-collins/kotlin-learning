@@ -13,8 +13,8 @@
 - [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
 - [ ] Scope functions: let/apply/run/also/with
 - [ ] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
-- [ ] Collections: List/Set/Map (mutable vs immutable)
-- [ ] Collections ops: map/filter/reduce/groupBy
+- [ ] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
+- [ ] Collection operations: map/filter/any/all/count/distinct/sorted → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
 - [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson06_NullSafety.kt)
 - [ ] Exceptions: try/catch, custom errors
 
