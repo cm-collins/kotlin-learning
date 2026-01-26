@@ -11,6 +11,7 @@
 - [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson03_Operators.kt)
 - [x] Control flow: if/else, when, while/do-while, break/continue → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
 - [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
+- [ ] Function parameters deep dive: defaults, named args, vararg, lambdas → [Lesson09_FunctionParameters.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson09_FunctionParameters.kt)
 - [ ] Scope functions: let/apply/run/also/with
 - [ ] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
 - [ ] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)

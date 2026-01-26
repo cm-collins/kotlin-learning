@@ -40,6 +40,12 @@ This file contains notes, insights, and key learnings from studying Kotlin funda
 - Functions can return `Unit` (nothing) or a specific type
 - Parameters can have default values
 - Named arguments improve readability
+- Useful parameter patterns you’ll use often:
+  - Default arguments: `fun f(x: Int = 10) { ... }`
+  - Named arguments: `f(x = 10)`
+  - `vararg`: `fun sumAll(vararg xs: Int)`
+  - Higher-order functions: `fun transform(items: List<Int>, mapper: (Int) -> Int)`
+- Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson09_FunctionParameters.kt`
 
 ### Control Flow (Loops + when)
 
