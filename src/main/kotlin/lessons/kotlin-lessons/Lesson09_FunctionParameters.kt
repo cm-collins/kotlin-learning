@@ -14,6 +14,13 @@
  *
  * Tip:
  * Kotlin parameters are read-only inside the function (you can't reassign them).
+ *
+ * Parameter types (important):
+ * - Parameters ALWAYS have a type: `name: String`, `age: Int`, `email: String?`
+ * - Kotlin can infer types for variables (`val x = 10`), but function parameters
+ *   must declare their types explicitly.
+ * - A `?` means nullable: `String?` can hold null, `String` cannot.
+ * - Function type parameters look like: `(InputType) -> OutputType`
  */
 
 fun main() {
@@ -40,8 +47,11 @@ fun basicParametersExample() {
     println()
 }
 
+// a and b are parameters of type Int, and the function returns an Int.
 fun add(a: Int, b: Int): Int = a + b
 
+// name is a non-nullable String parameter.
+// Return type is Unit (like void). Writing ": Unit" is optional.
 fun greet(name: String): Unit {
     // Unit is like “void” in other languages (and it's optional to write)
     println("Hello, $name!")
@@ -63,11 +73,19 @@ fun defaultAndNamedArgsExample() {
     println()
 }
 
+// Default parameters:
+// - role defaults to "User"
+// - isActive defaults to true
+// This avoids writing multiple overloads like formatUser(name) and formatUser(name, role).
 fun formatUser(name: String, role: String = "User", isActive: Boolean = true): String {
     val status = if (isActive) "active" else "inactive"
     return "$name ($role) is $status"
 }
 
+// Named arguments:
+// - Call sites can pass parameters by name (host=..., path=..., useHttps=...)
+// - Helpful when multiple parameters have the same type (e.g., many Strings)
+// - Lets you reorder arguments safely
 fun buildUrl(host: String, path: String, useHttps: Boolean = true): String {
     val scheme = if (useHttps) "https" else "http"
     return "$scheme://$host$path"
@@ -88,6 +106,9 @@ fun varargExample() {
     println()
 }
 
+// vararg parameters:
+// - Allow the caller to pass 0..N arguments
+// - Inside the function, `values` behaves like an array of Ints
 fun sumAll(vararg values: Int): Int = values.sum()
 
 /* ============================================================
@@ -105,12 +126,18 @@ fun nullableParamsAndValidationExample() {
     println()
 }
 
+// Nullable parameter:
+// - email: String? means callers can pass null
+// - Great for optional inputs (e.g., optional form fields)
 fun normalizeEmail(email: String?): String {
     // Treat null/blank as “no email”
     if (email.isNullOrBlank()) return "(no email)"
     return email.trim().lowercase()
 }
 
+// Parameter validation:
+// - require(condition) throws IllegalArgumentException if condition is false
+// - Use it for guarding invalid parameter values early
 fun divide(a: Int, b: Int): Int {
     require(b != 0) { "b must not be 0" }
     return a / b
@@ -138,6 +165,10 @@ fun higherOrderFunctionExample() {
     println()
 }
 
+// Function-type parameter:
+// - mapper has type: (Int) -> Int
+//   meaning: it accepts an Int and returns an Int
+// - This is the same idea used in standard library functions like map { ... }
 fun transform(items: List<Int>, mapper: (Int) -> Int): List<Int> {
     val result = mutableListOf<Int>()
     for (item in items) {
@@ -146,6 +177,8 @@ fun transform(items: List<Int>, mapper: (Int) -> Int): List<Int> {
     return result
 }
 
+// predicate has type: (Int) -> Boolean
+// - This is similar to filter { ... } in the standard library
 fun select(items: List<Int>, predicate: (Int) -> Boolean): List<Int> {
     val result = mutableListOf<Int>()
     for (item in items) {
