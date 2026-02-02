@@ -16,6 +16,10 @@ fun main() {
 /* ============================================================
    NULL VALUES AND USER INPUTS
    ============================================================ */
+// Beginner note:
+// - `readLine()` returns String? (nullable) because input may be missing.
+// - Use safe calls (?.) or a null-check before calling String methods.
+// - Prefer toIntOrNull() for parsing input to avoid NumberFormatException.
 fun nullValuesUserInput() {
     val userInput = readLine() // readLine() is a nullable method, always returns String?
 

@@ -10,6 +10,13 @@ fun main() {
     variablesExample()
 }
 
+/* ============================================================
+   val vs var + type inference
+   ============================================================ */
+// Beginner note:
+// - `val` means the reference cannot be reassigned (use this by default).
+// - `var` means you can reassign the reference (use only when you must).
+// - Kotlin can infer types from values: `val year = 2026` becomes Int automatically.
 fun variablesExample() {
     // val = immutable (cannot change)
     val name: String = "Brian"

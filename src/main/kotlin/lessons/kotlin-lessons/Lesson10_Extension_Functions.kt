@@ -44,6 +44,10 @@ fun main() {
 /* ============================================================
    1) EXTENSION FUNCTIONS BASICS
    ============================================================ */
+// Beginner note:
+// - An extension function lets you write: receiverType.newFunction()
+// - It improves readability (you can write “what you mean” on the type itself).
+// - Extensions do NOT actually modify the original class; they are resolved statically.
 fun extensionFunctionsBasicsDemo() {
     println("=== 1) Extension functions basics ===")
 
@@ -71,6 +75,9 @@ fun <T> List<T>.secondOrNull(): T? = if (this.size >= 2) this[1] else null
 /* ============================================================
    2) EXTENSION PROPERTIES
    ============================================================ */
+// Beginner note:
+// - Extension properties look like “extra fields”, but they can’t store state.
+// - They must be computed from the existing object (no backing field).
 fun extensionPropertiesDemo() {
     println("=== 2) Extension properties ===")
 
@@ -92,6 +99,9 @@ val String.wordCount: Int
 /* ============================================================
    3) NULLABLE RECEIVER EXTENSIONS
    ============================================================ */
+// Beginner note:
+// - If the receiver is nullable (String?), you can call the extension even on null.
+// - This is great for small safe helpers like `safeTrimOrEmpty()`.
 fun nullableReceiverExtensionsDemo() {
     println("=== 3) Nullable receiver extensions ===")
 
@@ -112,6 +122,9 @@ fun String?.safeTrimOrEmpty(): String = this?.trim().orEmpty()
 /* ============================================================
    4) EXTENSION RESOLUTION RULES (important!)
    ============================================================ */
+// Beginner note:
+// - If a class has a member function with the same signature, the member ALWAYS wins.
+// - Extensions are chosen based on the *declared* type, not the runtime type (static resolution).
 fun extensionResolutionRulesDemo() {
     println("=== 4) Extension resolution rules ===")
 
@@ -146,6 +159,10 @@ fun Lesson10Child.whoAmI(): String = "I am Child (extension)"
 /* ============================================================
    5) PRACTICAL EXTENSION: Int.isPrime()
    ============================================================ */
+// Beginner note:
+// - A practical extension keeps your main logic readable:
+//   `if (n.isPrime()) ...`
+// - Always handle edge cases first (n < 2, even numbers, etc.).
 fun primeNumberExtensionDemo() {
     println("=== 5) Practical extension: Int.isPrime() ===")
 
@@ -177,6 +194,11 @@ fun Int.isPrime(): Boolean {
 /* ============================================================
    6) SCOPE FUNCTIONS OVERVIEW
    ============================================================ */
+// Beginner note:
+// - Scope functions run a block with an object as the “context”.
+// - They differ mainly in:
+//   - How you refer to the object: `it` or `this`
+//   - What they return: the object or the lambda result
 fun scopeFunctionsQuickCheatSheet() {
     println("=== 6) Scope functions: cheat sheet ===")
     println(
@@ -196,6 +218,9 @@ fun scopeFunctionsQuickCheatSheet() {
 /* ============================================================
    7) let — null safety and transformations
    ============================================================ */
+// Beginner note:
+// - `let` is perfect for: “take this value, transform it, and return the new value”.
+// - Combined with safe calls: `nullable?.let { ... }` is a clean null-check pattern.
 fun letDemo() {
     println("=== 7) let ===")
 
@@ -225,6 +250,9 @@ fun letDemo() {
 /* ============================================================
    8) apply — object configuration
    ============================================================ */
+// Beginner note:
+// - `apply` is best for configuring an object.
+// - Inside the block you use `this`, and the function returns the object itself.
 fun applyDemo() {
     println("=== 8) apply ===")
 
@@ -252,6 +280,9 @@ data class Lesson10User(var name: String, var age: Int)
 /* ============================================================
    9) run — execute code block and return result
    ============================================================ */
+// Beginner note:
+// - `run` is like `let`, but uses `this` instead of `it`.
+// - It returns the lambda result, so it’s good for computing a value from an object.
 fun runDemo() {
     println("=== 9) run ===")
 
@@ -278,6 +309,10 @@ fun runDemo() {
 /* ============================================================
    10) also — side effects (logging, metrics, debugging)
    ============================================================ */
+// Beginner note:
+// - `also` returns the object (so you can keep chaining),
+//   and uses `it` inside the block.
+// - Use it for side effects like logging, debugging, or analytics.
 fun alsoDemo() {
     println("=== 10) also ===")
 
@@ -295,6 +330,9 @@ fun alsoDemo() {
 /* ============================================================
    11) with — calling multiple methods on one object
    ============================================================ */
+// Beginner note:
+// - `with(obj) { ... }` is like `obj.run { ... }`.
+// - Use it when you already have an object and want to call multiple methods cleanly.
 fun withDemo() {
     println("=== 11) with ===")
 

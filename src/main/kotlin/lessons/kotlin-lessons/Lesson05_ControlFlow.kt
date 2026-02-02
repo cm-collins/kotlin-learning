@@ -30,6 +30,9 @@ fun main() {
 /* ============================================================
    WHEN (Kotlin’s powerful switch-like expression)
    ============================================================ */
+// Beginner note:
+// - `when` is Kotlin’s flexible alternative to switch-case.
+// - It can be used as an expression (it returns a value) which is very common in Kotlin.
 fun whenExamples() {
     // 1) when with a value (similar to switch-case)
     val dayNumber = 3
@@ -92,6 +95,9 @@ fun whenExamples() {
 /* ============================================================
    IF CONDITIONS
    ============================================================ */
+// Beginner note:
+// - `if` in Kotlin can also be an expression (it can return a value), not just a statement.
+// - Use clear boolean conditions; prefer readability over cleverness.
 fun ifConditionsExample() {
     val x = 7
     val y = 7
@@ -110,6 +116,10 @@ fun ifConditionsExample() {
 /* ============================================================
    WHILE LOOPS
    ============================================================ */
+// Beginner note:
+// - `while` repeats while a condition is true.
+// - `do-while` runs at least once, then checks the condition.
+// - Use `break` to stop a loop, `continue` to skip to the next iteration.
 fun whileLoopsExample() {
     // 1) Basic while loop (runs while condition is true)
     var count = 1
@@ -162,6 +172,9 @@ fun whileLoopsExample() {
 /* ============================================================
    INTERACTIVE EXAMPLE: USER INPUT WITH WHILE LOOP
    ============================================================ */
+// Beginner note:
+// - When reading input, prefer `toIntOrNull()` / `toDoubleOrNull()` to avoid crashes.
+// - A loop + user input is a common pattern for menus, calculators, and games.
 fun interactiveWhileExample() {
     println("=== Simple Calculator ===")
     println("Enter numbers to add them up.")
@@ -204,6 +217,9 @@ fun interactiveWhileExample() {
 /* ============================================================
    BONUS: NUMBER GUESSING GAME
    ============================================================ */
+// Beginner note:
+// - This example combines loops + conditionals + parsing input safely.
+// - Games are great practice for control flow because they naturally repeat until a condition is met.
 fun guessTheNumber() {
     println("\n=== Guess the Number Game ===")
     println("I'm thinking of a number between 1 and 10.")
@@ -238,6 +254,9 @@ fun guessTheNumber() {
 /* ============================================================
    OPTIONAL: INTERACTIVE WHEN EXAMPLE (USER INPUT)
    ============================================================ */
+// Beginner note:
+// - This example shows `when` without an argument: you write conditions directly.
+// - It’s useful when you want “if/else ladder” logic but cleaner.
 fun interactiveWhenExample() {
     println("=== Grade Calculator (when + ranges) ===")
     print("Enter your score (0-100): ")

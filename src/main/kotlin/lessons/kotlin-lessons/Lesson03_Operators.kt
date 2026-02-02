@@ -18,6 +18,9 @@ fun main() {
 /* ============================================================
    ARITHMETIC OPERATORS
    ============================================================ */
+// Beginner note:
+// - Arithmetic operators work like math: +, -, *, /, % (remainder).
+// - Int division truncates: 10 / 3 = 3. Use Double for decimal division.
 fun arithmeticOperatorsExample() {
     val a = 10
     val b = 3
@@ -36,6 +39,9 @@ fun arithmeticOperatorsExample() {
 /* ============================================================
    COMPARISON OPERATORS
    ============================================================ */
+// Beginner note:
+// - Comparison operators return Boolean: true/false.
+// - `==` checks value equality in Kotlin (it calls equals()).
 fun comparisonOperatorsExample() {
     val x = 7
     val y = 10
@@ -51,6 +57,9 @@ fun comparisonOperatorsExample() {
 /* ============================================================
    LOGICAL OPERATORS
    ============================================================ */
+// Beginner note:
+// - Logical operators combine booleans:
+//   && means “both must be true”, || means “at least one true”, ! means “not”.
 fun logicalOperatorsExample() {
     val isAdult = true
     val hasID = false

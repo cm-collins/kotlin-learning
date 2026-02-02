@@ -30,6 +30,10 @@ fun main() {
 /* ============================================================
    LIST BASICS (List vs MutableList)
    ============================================================ */
+// Beginner note:
+// - `List<T>` is read-only (you can read/iterate, but not add/remove through that reference).
+// - `MutableList<T>` lets you add/remove/update elements.
+// - Use `getOrNull(index)` when you’re not sure the index exists (prevents crashes).
 fun listsBasicsExample() {
     // 1) Read-only list
     val fruits: List<String> = listOf("apple", "banana", "mango")
@@ -62,6 +66,9 @@ fun listsBasicsExample() {
 /* ============================================================
    COMMON LIST OPERATIONS (map / filter / etc.)
    ============================================================ */
+// Beginner note:
+// - Most collection operations return a NEW list (they don’t modify the original).
+// - map = transform each element, filter = keep elements that match a condition.
 fun listOperationsExample() {
     val values = listOf(1, 2, 3, 4, 5, 6)
     println("\nValues: $values")
@@ -94,6 +101,9 @@ fun listOperationsExample() {
 /* ============================================================
    REAL-WORLD EXAMPLE: MAPPING BACKEND DATA (DTO -> UI/Domain)
    ============================================================ */
+// Beginner note:
+// - In real apps, you often transform network data (DTOs) into models used by your UI/domain layer.
+// - This keeps your UI code clean and protects the rest of your app from API changes.
 data class ApiUserDto(
     val id: String,
     val firstName: String?,

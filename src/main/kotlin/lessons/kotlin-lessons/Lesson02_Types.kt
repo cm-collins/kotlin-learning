@@ -11,6 +11,14 @@ fun main() {
     dataTypesExample()
 }
 
+/* ============================================================
+   Basic data types
+   ============================================================ */
+// Beginner note:
+// - Numbers: Int/Long (whole numbers), Double/Float (decimals)
+// - Kotlin defaults to Int for whole-number literals and Double for decimal literals.
+// - Suffixes matter: `100L` is Long, `10.5F` is Float.
+// - Char uses single quotes: 'K'. String uses double quotes: "Kotlin".
 fun dataTypesExample() {
     val myInt: Int = 10
     val myLong: Long = 10000000000L

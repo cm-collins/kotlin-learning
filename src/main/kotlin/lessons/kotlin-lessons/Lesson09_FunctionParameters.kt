@@ -37,6 +37,10 @@ fun main() {
 /* ============================================================
    1) BASIC PARAMETERS + RETURN TYPES
    ============================================================ */
+// Beginner note:
+// - Parameters are the inputs of a function.
+// - The return type is what the function gives back.
+// - Kotlin requires parameter types (name: String). Return type can be inferred sometimes, but writing it is clearer for beginners.
 fun basicParametersExample() {
     println("=== 1) Basic parameters ===")
 
@@ -60,6 +64,10 @@ fun greet(name: String): Unit {
 /* ============================================================
    2) DEFAULT ARGUMENTS + NAMED ARGUMENTS
    ============================================================ */
+// Beginner note:
+// - Default arguments let you omit a parameter when calling the function.
+// - Named arguments make call sites clearer and allow reordering.
+// - This reduces the need for multiple overloaded functions.
 fun defaultAndNamedArgsExample() {
     println("=== 2) Default + named arguments ===")
 
@@ -94,6 +102,10 @@ fun buildUrl(host: String, path: String, useHttps: Boolean = true): String {
 /* ============================================================
    3) vararg PARAMETERS (variable number of args)
    ============================================================ */
+// Beginner note:
+// - `vararg` lets a function accept 0..N arguments.
+// - Inside the function, those values behave like an array.
+// - `*` (spread operator) expands an array into vararg arguments.
 fun varargExample() {
     println("=== 3) vararg ===")
 
@@ -114,6 +126,9 @@ fun sumAll(vararg values: Int): Int = values.sum()
 /* ============================================================
    4) NULLABLE PARAMETERS + VALIDATION
    ============================================================ */
+// Beginner note:
+// - Nullable parameters (String?) are common for “optional” inputs.
+// - Validate inputs early using `require(...)` so bad values fail fast with a clear message.
 fun nullableParamsAndValidationExample() {
     println("=== 4) Nullable params + validation ===")
 
@@ -146,6 +161,10 @@ fun divide(a: Int, b: Int): Int {
 /* ============================================================
    5) HIGHER-ORDER FUNCTIONS (functions that accept lambdas)
    ============================================================ */
+// Beginner note:
+// - A higher-order function takes another function as a parameter (a lambda).
+// - This is how Kotlin’s powerful APIs like map/filter work.
+// - “Trailing lambda” syntax lets you move the lambda outside the parentheses for readability.
 fun higherOrderFunctionExample() {
     println("=== 5) Higher-order functions ===")
 

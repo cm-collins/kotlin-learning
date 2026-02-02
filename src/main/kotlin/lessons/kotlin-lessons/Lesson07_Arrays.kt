@@ -30,6 +30,10 @@ fun main() {
 /* ============================================================
 ARRAYS BASICS
 ============================================================ */
+// Beginner note:
+// - Arrays have a fixed size (you can update elements, but you can’t add/remove slots).
+// - Indexing starts at 0: words[0] is the first element.
+// - Prefer List/MutableList for “grow/shrink” collections; use arrays for fixed-size or Java interop.
 fun arraysExample() {
     // 1) Create an Array<String>
     val words: Array<String> = arrayOf("hello", "collins", "good", "morning")
