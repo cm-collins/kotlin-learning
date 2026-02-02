@@ -7,15 +7,18 @@
 
 - [x] Variables: `val` vs `var` → [Lesson01_Variables.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson01_Variables.kt)
 - [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson02_Types.kt)
-- [ ] Strings: templates, common ops, formatting
+- [x] Strings: templates, common ops, formatting → [Lesson11_TypeConversion_And_Strings.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson11_TypeConversion_And_Strings.kt)
 - [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson03_Operators.kt)
 - [x] Control flow: if/else, when, while/do-while, break/continue → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
 - [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
-- [ ] Function parameters deep dive: defaults, named args, vararg, lambdas → [Lesson09_FunctionParameters.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson09_FunctionParameters.kt)
-- [ ] Scope functions: let/apply/run/also/with
-- [ ] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
-- [ ] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
-- [ ] Collection operations: map/filter/any/all/count/distinct/sorted → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
+- [x] Function parameters deep dive: defaults, named args, vararg, lambdas → [Lesson09_FunctionParameters.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson09_FunctionParameters.kt)
+- [x] Scope functions: let/apply/run/also/with → [Lesson10_Extension_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt)
+- [x] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
+- [x] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
+- [x] Collections: Set + Map (mutable vs immutable) → [Lesson15_Sets_And_Maps.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson15_Sets_And_Maps.kt)
+- [x] Collection operations: map/filter/reduce/groupBy/partition/zip → [Lesson16_Collection_Operations.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson16_Collection_Operations.kt)
+- [x] Sequences (lazy ops) → [Lesson17_Sequences.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson17_Sequences.kt)
+- [x] Collection builders (buildList/buildSet/buildMap) → [Lesson18_Collection_Builders.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson18_Collection_Builders.kt)
 - [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson06_NullSafety.kt)
 - [ ] Exceptions: try/catch, custom errors
 

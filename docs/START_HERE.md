@@ -17,11 +17,13 @@ This repository is designed to take you from **Kotlin basics** to **production-r
 Before you start, make sure you have:
 
 ### Required
+
 - **IntelliJ IDEA** or **Android Studio** (recommended for Android development later)
 - **JDK 17+** (bundled with Android Studio, or download separately)
 - **Git** (to clone this repository)
 
 ### Optional (for later phases)
+
 - **macOS + Xcode** (only needed for Kotlin Multiplatform iOS development)
 
 ---
@@ -68,8 +70,21 @@ Work through lessons in order:
 5. **Lesson05_ControlFlow.kt** — if/else, while loops, break/continue
 6. **Lesson06_NullSafety.kt** — Nullable types, safe calls, smart casts
 7. **Lesson07_Arrays.kt** — Arrays, indexing, iteration, conversions
+8. **Lesson08_Lists.kt** — Lists (immutable/mutable), iteration
+9. **Lesson09_FunctionParameters.kt** — Default/named args, vararg, lambdas (parameter deep dive)
+10. **Lesson10_Extension_Functions.kt** — Extension functions + scope functions (let/apply/run/also/with)
+11. **Lesson11_TypeConversion_And_Strings.kt** — Type conversion, string templates, string formatting
+12. **Lesson12_Labels_And_Returns.kt** — Labels and returns (labeled break/continue, return@label)
+13. **Lesson13_Advanced_Functions.kt** — Single-expression, infix, local functions, tailrec
+14. **Lesson14_Platform_Types_Java_Interop.kt** — Java interop: platform types (String!)
+15. **Lesson15_Sets_And_Maps.kt** — Sets + maps
+16. **Lesson16_Collection_Operations.kt** — map/filter/reduce/groupBy/partition/zip
+17. **Lesson17_Sequences.kt** — Sequences (lazy evaluation)
+18. **Lesson18_Collection_Builders.kt** — buildList/buildSet/buildMap
 
 **Location**: `src/main/kotlin/lessons/kotlin-lessons/`
+
+> Note: Lesson 14 also includes a small Java file in `src/main/java/interop/` used to demonstrate platform types.
 
 ### How to Run Lessons
 
@@ -77,7 +92,7 @@ Each lesson file has a `main()` function. To run any lesson:
 
 1. Open the lesson file in IntelliJ
 2. Right-click in the editor
-3. Select **Run 'LessonXX_...'**
+3. Select **Run 'LessonXX\_...'**
 
 Alternatively, click the green play button (▶️) next to `fun main()`.
 
@@ -141,26 +156,32 @@ Use `docs/notes/progress.md` to track what you've learned:
 ## 🎯 Learning Tips
 
 ### 1. Practice Daily
+
 - Spend 30-60 minutes daily on lessons/exercises
 - Consistency beats intensity
 
 ### 2. Type the Code
+
 - Don't just read — type out the examples yourself
 - Experiment by changing values and re-running
 
 ### 3. Solve Exercises Without Looking
+
 - Try exercises on your own first
 - Only check solutions after attempting
 
 ### 4. Take Notes
+
 - Use `docs/notes/notes-kotlin.md` for insights
 - Write down things that confused you and how you understood them
 
 ### 5. Follow Best Practices
+
 - Refer to `docs/BestPractices/kotlin-best-practices.md` regularly
 - Write clean code from day one
 
 ### 6. Ask Questions
+
 - If something is unclear, look it up in the Kotlin docs
 - Experiment in the code to understand behavior
 
@@ -173,6 +194,7 @@ Use `docs/notes/progress.md` to track what you've learned:
 **Problem**: "No main class found" or similar error
 
 **Solution**:
+
 - Make sure the file has a `fun main()` function
 - Right-click inside the file (not on the filename)
 - Select **Run** from the context menu
@@ -182,6 +204,7 @@ Use `docs/notes/progress.md` to track what you've learned:
 **Problem**: "Gradle sync failed"
 
 **Solution**:
+
 1. Go to **File → Invalidate Caches / Restart**
 2. Select **Invalidate and Restart**
 3. Wait for Gradle to re-sync
@@ -191,6 +214,7 @@ Use `docs/notes/progress.md` to track what you've learned:
 **Problem**: Compilation errors
 
 **Solution**:
+
 1. Check the error message in the Build tab
 2. Make sure you're using JDK 17 or higher
 3. Run `./gradlew clean build` from terminal
@@ -219,6 +243,7 @@ Once you complete Kotlin Fundamentals (Lessons 01-07):
 ## ✅ Quick Checklist
 
 Before starting:
+
 - [ ] IntelliJ IDEA or Android Studio installed
 - [ ] JDK 17+ available
 - [ ] Repository cloned and opened in IDE
