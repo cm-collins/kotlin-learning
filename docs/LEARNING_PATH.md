@@ -71,11 +71,11 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ### 1.7 Exception Handling
 
-- [ ] Try-catch-finally
-- [ ] Throwing exceptions
-- [ ] Custom exceptions
-- [ ] Nothing type
-- [ ] Checked vs unchecked exceptions
+- [x] Try-catch-finally - `Lesson19_Exception_Handling.kt`
+- [x] Throwing exceptions - `Lesson19_Exception_Handling.kt`
+- [x] Custom exceptions - `Lesson19_Exception_Handling.kt`
+- [x] Nothing type - `Lesson19_Exception_Handling.kt`
+- [x] Checked vs unchecked exceptions - `Lesson19_Exception_Handling.kt`
 
 ---
 
@@ -151,13 +151,13 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ### 3.1 Higher-Order Functions
 
-- [ ] Functions as first-class citizens
-- [ ] Lambda expressions
-- [ ] Anonymous functions
-- [ ] Function types
-- [ ] Higher-order functions
-- [ ] Returning functions from functions
-- [ ] Closures
+- [ ] Functions as first-class citizens - `Lesson20_Lambdas.kt`
+- [ ] Lambda expressions - `Lesson20_Lambdas.kt`
+- [ ] Anonymous functions - `Lesson20_Lambdas.kt`
+- [ ] Function types - `Lesson20_Lambdas.kt`
+- [ ] Higher-order functions - `Lesson20_Lambdas.kt`
+- [ ] Returning functions from functions - `Lesson20_Lambdas.kt`
+- [ ] Closures - `Lesson20_Lambdas.kt`
 
 ### 3.2 Functional Collection Operations
 
@@ -798,7 +798,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ## 📊 Progress Summary
 
-**Stage 1 (Kotlin Fundamentals)**: 43/48 items completed (90%)
+**Stage 1 (Kotlin Fundamentals)**: 48/48 items completed (100%)
 **Stage 2 (OOP Kotlin)**: 0/43 items completed (0%)
 **Stage 3 (Functional Programming)**: 0/20 items completed (0%)
 **Stage 4 (Coroutines & Concurrency)**: 0/34 items completed (0%)
@@ -815,7 +815,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 15 (Production Readiness)**: 0/39 items completed (0%)
 **Stage 16 (Portfolio Projects)**: 0/36 items completed (0%)
 
-**Overall Progress**: 43/480 items completed (9%)
+**Overall Progress**: 48/480 items completed (10%)
 
 ---
 

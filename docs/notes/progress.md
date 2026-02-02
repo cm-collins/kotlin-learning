@@ -20,7 +20,7 @@
 - [x] Sequences (lazy ops) → [Lesson17_Sequences.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson17_Sequences.kt)
 - [x] Collection builders (buildList/buildSet/buildMap) → [Lesson18_Collection_Builders.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson18_Collection_Builders.kt)
 - [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson06_NullSafety.kt)
-- [ ] Exceptions: try/catch, custom errors
+- [x] Exceptions: try/catch, custom errors → [Lesson19_Exception_Handling.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson19_Exception_Handling.kt)
 
 ## Stage 2 — Kotlin OOP + Modeling
 

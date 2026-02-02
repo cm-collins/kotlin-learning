@@ -81,10 +81,15 @@ Work through lessons in order:
 16. **Lesson16_Collection_Operations.kt** — map/filter/reduce/groupBy/partition/zip
 17. **Lesson17_Sequences.kt** — Sequences (lazy evaluation)
 18. **Lesson18_Collection_Builders.kt** — buildList/buildSet/buildMap
+19. **Lesson19_Exception_Handling.kt** — try/catch/finally, throw, custom exceptions, Nothing, Java checked exceptions
 
 **Location**: `src/main/kotlin/lessons/kotlin-lessons/`
 
 > Note: Lesson 14 also includes a small Java file in `src/main/java/interop/` used to demonstrate platform types.
+
+### Optional (Recommended before Stage 3)
+
+20. **Lesson20_Lambdas.kt** — Lambda basics, function types, higher-order functions, closures
 
 ### How to Run Lessons
 
@@ -223,7 +228,7 @@ Use `docs/notes/progress.md` to track what you've learned:
 
 ## 🚀 Next Steps
 
-Once you complete Kotlin Fundamentals (Lessons 01-07):
+Once you complete Kotlin Fundamentals (Lessons 01-19):
 
 1. **Review** `docs/notes/progress.md` and mark all completed items
 2. **Continue** with more advanced Kotlin topics (OOP, Coroutines, Flow)
