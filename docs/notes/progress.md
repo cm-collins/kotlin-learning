@@ -24,14 +24,20 @@
 
 ## Stage 2 — Kotlin OOP + Modeling
 
-- [ ] Classes + constructors
-- [ ] Data classes (copy, destructuring)
+- [x] Classes + constructors → [Normal_classes.kt](../../src/main/kotlin/lessons/classes_objects/Normal_classes.kt)
+- [x] Data classes (copy, destructuring) → [data_classes.kt](../../src/main/kotlin/lessons/classes_objects/data_classes.kt)
 - [ ] Interfaces + composition
-- [ ] Sealed classes for state/result modeling
+- [x] Sealed classes for state/result modeling → [sealed_classes.kt](../../src/main/kotlin/lessons/classes_objects/sealed_classes.kt)
 - [ ] Generics (basic)
-- [ ] Extension functions + properties
-- [ ] Object + companion object
+- [x] Extension functions + properties → [Lesson10_Extension_Functions.kt](../../src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt)
+- [x] Object + companion object → [singleton-(object_declaration)_classes.kt](../../src/main/kotlin/lessons/classes_objects/singleton-(object_declaration)_classes.kt)
 - [ ] Visibility modifiers + packages
+- [x] Enum classes → [enum_classes.kt](../../src/main/kotlin/lessons/classes_objects/enum_classes.kt)
+- [x] Abstract classes + inheritance → [abstract_classes.kt](../../src/main/kotlin/lessons/classes_objects/abstract_classes.kt)
+- [x] Anonymous objects (callbacks, listeners) → [anonymous_classes.kt](../../src/main/kotlin/lessons/classes_objects/anonymous_classes.kt)
+- [x] Nested + inner classes → [inner_classes.kt](../../src/main/kotlin/lessons/classes_objects/inner_classes.kt)
+- [x] Value classes (inline classes) → [value_classes.kt](../../src/main/kotlin/lessons/classes_objects/value_classes.kt)
+- [x] Annotation classes → [annotation_classes.kt](../../src/main/kotlin/lessons/classes_objects/annotation_classes.kt)
 
 ## Stage 3 — Coroutines + Flow (Mobile-critical)
 

@@ -86,6 +86,113 @@ This file contains notes, insights, and key learnings from studying Kotlin funda
   - `any`, `all`, `count`, `sum`, `maxOrNull`, `minOrNull`
 - Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt`
 
+### Extension Functions & Scope Functions
+
+- **Extension functions** add new behaviour to existing types without modifying them:
+  - `fun String.capitalizeFirst(): String { ... }`
+  - Inside the body, `this` refers to the receiver object
+- **Scope functions** run a block of code in the context of an object:
+
+```
+  Function  | Context | Returns           | Common use
+  --------- | ------- | ----------------- | -----------------------------------
+  let       | it      | lambda result     | Null-safe transforms, scoping
+  run       | this    | lambda result     | Compute + configure together
+  apply     | this    | context object    | Object configuration (builder-style)
+  also      | it      | context object    | Side effects (logging, validation)
+  with(obj) | this    | lambda result     | Multiple calls on the same object
+```
+
+- Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt`
+
+### Exception Handling
+
+- Kotlin has **no checked exceptions** (unlike Java)
+- `try` is an **expression** — it can return a value:
+  - `val n = try { str.toInt() } catch (e: Exception) { 0 }`
+- `throw` is also an expression with return type `Nothing`
+- Useful stdlib helpers: `require()`, `check()`, `error()`
+- Lesson reference: `src/main/kotlin/lessons/kotlin-lessons/Lesson19_Exception_Handling.kt`
+
+---
+
+## Classes & Objects (OOP)
+
+### Class Types at a Glance
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                     Kotlin Class Types                               │
+├──────────────────┬───────────────────────────────────────────────────┤
+│ class            │ Regular class — properties, methods, constructors │
+│ data class       │ Data holder — auto equals/hashCode/toString/copy  │
+│ enum class       │ Fixed set of named constants with shared type     │
+│ sealed class     │ Closed hierarchy — exhaustive when matching       │
+│ abstract class   │ Cannot instantiate — defines abstract members     │
+│ object           │ Singleton — one instance, thread-safe, lazy init  │
+│ companion object │ Static-like members inside a class                │
+│ inner class      │ Nested class that accesses outer class members    │
+│ value class      │ Type-safe wrapper around a single value (inline)  │
+│ annotation class │ Metadata for classes/functions/properties         │
+└──────────────────┴───────────────────────────────────────────────────┘
+```
+
+### Decision Flowchart (which class type?)
+
+```
+Start
+  │
+  ├─ Need a simple object with state + behaviour?
+  │    └─ class  (Normal_classes.kt)
+  │
+  ├─ Mainly carrying data (DTO, model, API response)?
+  │    └─ data class  (data_classes.kt)
+  │
+  ├─ Fixed, enumerable set of options (e.g. status codes)?
+  │    └─ enum class  (enum_classes.kt)
+  │
+  ├─ Closed set of related subtypes (e.g. Result, UiState)?
+  │    └─ sealed class / sealed interface  (sealed_classes.kt)
+  │
+  ├─ Want to define a contract with some shared behaviour?
+  │    ├─ Only ONE parent needed → abstract class  (abstract_classes.kt)
+  │    └─ Multiple parents needed → interface  (coming soon)
+  │
+  ├─ Need exactly ONE instance in the whole app?
+  │    └─ object declaration  (singleton_classes.kt)
+  │
+  ├─ Need a one-off implementation (callback, listener)?
+  │    └─ object expression  (anonymous_classes.kt)
+  │
+  ├─ Nested class needs to reference the outer instance?
+  │    └─ inner class  (inner_classes.kt)
+  │
+  ├─ Wrapping a primitive for type safety (zero allocation)?
+  │    └─ @JvmInline value class  (value_classes.kt)
+  │
+  └─ Attaching metadata / markers to code?
+       └─ annotation class  (annotation_classes.kt)
+```
+
+### Equality in Kotlin
+
+- `==` checks **structural equality** (calls `equals()` under the hood)
+- `===` checks **referential equality** (same object in memory)
+- `data class` auto-generates `equals()` based on constructor properties
+- Regular `class` uses `Any.equals()` by default (same as `===`)
+
+### Key OOP Concepts
+
+| Concept | Keyword | Meaning |
+|---------|---------|---------|
+| Inheritance | `open`, `:` | A class can extend another open/abstract class |
+| Override | `override` | Subclass provides its own implementation |
+| Abstract | `abstract` | Member has no body; subclass **must** implement it |
+| Polymorphism | — | Treating different subclasses through a common parent type |
+| Encapsulation | `private`, `internal` | Hiding internal details behind a public API |
+
+- Lesson files: `src/main/kotlin/lessons/classes_objects/`
+
 ---
 
 ## Common Patterns

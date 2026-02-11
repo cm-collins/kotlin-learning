@@ -91,6 +91,44 @@ Work through lessons in order:
 
 20. **Lesson20_Lambdas.kt** — Lambda basics, function types, higher-order functions, closures
 
+### Phase B: Object-Oriented Kotlin (Classes & Objects)
+
+Work through class types in any order (they are self-contained):
+
+**Location**: `src/main/kotlin/lessons/classes_objects/`
+
+| # | File | What You'll Learn |
+|---|------|-------------------|
+| 1 | `Normal_classes.kt` | Class basics, primary constructors, properties, methods, equality (`==` vs `===`) |
+| 2 | `data_classes.kt` | Data classes, `copy()`, destructuring, auto-generated `equals`/`hashCode`/`toString` |
+| 3 | `enum_classes.kt` | Enum constants, properties, methods, `when` exhaustive matching, `entries`/`valueOf` |
+| 4 | `sealed_classes.kt` | Sealed classes & interfaces, modeling state/results, exhaustive `when` |
+| 5 | `abstract_classes.kt` | Abstract members, `open`/`override`, inheritance, polymorphism |
+| 6 | `singleton-(object_declaration)_classes.kt` | `object`, `data object`, companion objects, object expressions |
+| 7 | `anonymous_classes.kt` | Object expressions for callbacks, listeners, adapters, comparators |
+| 8 | `inner_classes.kt` | Nested vs inner classes, accessing outer class members |
+| 9 | `value_classes.kt` | `@JvmInline value class`, type-safe wrappers, zero-overhead abstractions |
+| 10 | `annotation_classes.kt` | Custom annotations, `@Target`, `@Retention`, reading annotations via reflection |
+
+> **Tip**: Each file has a `main()` function — run it the same way as the fundamentals lessons.
+
+#### Class Type Quick-Reference
+
+```
+Which class type should I use?
+──────────────────────────────
+Need a plain object with behavior?        → class (Normal_classes.kt)
+Need a data holder (DTO, model)?          → data class (data_classes.kt)
+Need a fixed set of constants?            → enum class (enum_classes.kt)
+Need a closed set of subtypes?            → sealed class / sealed interface (sealed_classes.kt)
+Need a base with abstract members?        → abstract class (abstract_classes.kt)
+Need exactly ONE global instance?         → object declaration (singleton_classes.kt)
+Need one-off interface implementation?    → object expression (anonymous_classes.kt)
+Need to access outer class from nested?   → inner class (inner_classes.kt)
+Need type-safe wrapper (zero-cost)?       → @JvmInline value class (value_classes.kt)
+Need metadata / compile-time markers?     → annotation class (annotation_classes.kt)
+```
+
 ### How to Run Lessons
 
 Each lesson file has a `main()` function. To run any lesson:
@@ -228,12 +266,12 @@ Use `docs/notes/progress.md` to track what you've learned:
 
 ## 🚀 Next Steps
 
-Once you complete Kotlin Fundamentals (Lessons 01-19):
+Once you complete Kotlin Fundamentals (Lessons 01-19) and Classes & Objects:
 
 1. **Review** `docs/notes/progress.md` and mark all completed items
-2. **Continue** with more advanced Kotlin topics (OOP, Coroutines, Flow)
-3. **Move to Phase B**: Android development (when ready)
-4. **Eventually**: Kotlin Multiplatform (Phase C)
+2. **Continue** Stage 2 — remaining items: Interfaces, Delegation, lateinit, lazy, Generics
+3. **Move to Stage 3**: Functional Programming in Kotlin
+4. **Eventually**: Coroutines, Android, and Kotlin Multiplatform
 
 ---
 

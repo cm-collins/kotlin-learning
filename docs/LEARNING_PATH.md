@@ -83,29 +83,29 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ### 2.1 Classes & Objects
 
-- [ ] Class declaration and instantiation
-- [ ] Primary constructors
+- [x] Class declaration and instantiation - `Normal_classes.kt`
+- [x] Primary constructors - `Normal_classes.kt`
 - [ ] Secondary constructors
 - [ ] Init blocks
-- [ ] Properties (getters/setters)
+- [x] Properties (getters/setters) - `Normal_classes.kt`, `data_classes.kt`
 - [ ] Backing fields
 - [ ] Late-initialized properties (`lateinit`)
 - [ ] Lazy properties (`by lazy`)
 
 ### 2.2 Data Modeling
 
-- [ ] Data classes
-- [ ] Copy function
-- [ ] Destructuring declarations
-- [ ] Component functions
-- [ ] Equals, hashCode, toString
+- [x] Data classes - `data_classes.kt`
+- [x] Copy function - `data_classes.kt`
+- [x] Destructuring declarations - `data_classes.kt`
+- [x] Component functions - `data_classes.kt`
+- [x] Equals, hashCode, toString - `data_classes.kt`
 
 ### 2.3 Inheritance & Interfaces
 
-- [ ] Open classes and methods
-- [ ] Inheritance basics
-- [ ] Overriding methods and properties
-- [ ] Abstract classes
+- [x] Open classes and methods - `abstract_classes.kt`
+- [x] Inheritance basics - `abstract_classes.kt`
+- [x] Overriding methods and properties - `abstract_classes.kt`
+- [x] Abstract classes - `abstract_classes.kt`
 - [ ] Interfaces
 - [ ] Interface default implementations
 - [ ] Multiple interface implementation
@@ -113,13 +113,13 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ### 2.4 Advanced Class Features
 
-- [ ] Sealed classes and sealed interfaces
-- [ ] Enum classes
-- [ ] Inline classes (value classes)
-- [ ] Object declarations (singletons)
-- [ ] Companion objects
-- [ ] Nested and inner classes
-- [ ] Anonymous objects
+- [x] Sealed classes and sealed interfaces - `sealed_classes.kt`
+- [x] Enum classes - `enum_classes.kt`
+- [x] Inline classes (value classes) - `value_classes.kt`
+- [x] Object declarations (singletons) - `singleton-(object_declaration)_classes.kt`
+- [x] Companion objects - `singleton-(object_declaration)_classes.kt`
+- [x] Nested and inner classes - `inner_classes.kt`
+- [x] Anonymous objects - `anonymous_classes.kt`
 
 ### 2.5 Visibility & Organization
 
@@ -799,7 +799,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 ## 📊 Progress Summary
 
 **Stage 1 (Kotlin Fundamentals)**: 48/48 items completed (100%)
-**Stage 2 (OOP Kotlin)**: 0/43 items completed (0%)
+**Stage 2 (OOP Kotlin)**: 19/43 items completed (44%)
 **Stage 3 (Functional Programming)**: 0/20 items completed (0%)
 **Stage 4 (Coroutines & Concurrency)**: 0/34 items completed (0%)
 **Stage 5 (Android Fundamentals)**: 0/33 items completed (0%)
@@ -815,7 +815,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 15 (Production Readiness)**: 0/39 items completed (0%)
 **Stage 16 (Portfolio Projects)**: 0/36 items completed (0%)
 
-**Overall Progress**: 48/480 items completed (10%)
+**Overall Progress**: 67/480 items completed (14%)
 
 ---
 
@@ -850,10 +850,10 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 ## 📚 Next Steps
 
-1. Continue Stage 1 (Kotlin Fundamentals) - you're 34% complete
-2. Create exercises for each completed lesson
-3. Add tests for your exercises
-4. Move to Stage 2 once Stage 1 is 100% complete
+1. Continue Stage 2 (OOP Kotlin) - you're 44% complete
+2. Next up: Interfaces, Delegation, Secondary constructors, Init blocks, Backing fields, lateinit, lazy
+3. Create exercises for each completed lesson
+4. Add tests for your exercises
 5. Update this file regularly to track progress
 
 ---
