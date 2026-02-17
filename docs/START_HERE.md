@@ -109,6 +109,7 @@ Work through class types in any order (they are self-contained):
 | 8 | `inner_classes.kt` | Nested vs inner classes, accessing outer class members |
 | 9 | `value_classes.kt` | `@JvmInline value class`, type-safe wrappers, zero-overhead abstractions |
 | 10 | `annotation_classes.kt` | Custom annotations, `@Target`, `@Retention`, reading annotations via reflection |
+| 11 | `interfaces_and_delegation.kt` | Interfaces, default methods, multiple interfaces, delegation (`by`) |
 
 > **Tip**: Each file has a `main()` function — run it the same way as the fundamentals lessons.
 

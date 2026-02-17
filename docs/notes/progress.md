@@ -26,7 +26,7 @@
 
 - [x] Classes + constructors → [Normal_classes.kt](../../src/main/kotlin/lessons/classes_objects/Normal_classes.kt)
 - [x] Data classes (copy, destructuring) → [data_classes.kt](../../src/main/kotlin/lessons/classes_objects/data_classes.kt)
-- [ ] Interfaces + composition
+- [x] Interfaces + composition → [interfaces_and_delegation.kt](../../src/main/kotlin/lessons/classes_objects/interfaces_and_delegation.kt)
 - [x] Sealed classes for state/result modeling → [sealed_classes.kt](../../src/main/kotlin/lessons/classes_objects/sealed_classes.kt)
 - [ ] Generics (basic)
 - [x] Extension functions + properties → [Lesson10_Extension_Functions.kt](../../src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt)

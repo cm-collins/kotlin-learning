@@ -106,10 +106,10 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 - [x] Inheritance basics - `abstract_classes.kt`
 - [x] Overriding methods and properties - `abstract_classes.kt`
 - [x] Abstract classes - `abstract_classes.kt`
-- [ ] Interfaces
-- [ ] Interface default implementations
-- [ ] Multiple interface implementation
-- [ ] Delegation pattern (`by` keyword)
+- [x] Interfaces - `interfaces_and_delegation.kt`
+- [x] Interface default implementations - `interfaces_and_delegation.kt`
+- [x] Multiple interface implementation - `interfaces_and_delegation.kt`
+- [x] Delegation pattern (`by` keyword) - `interfaces_and_delegation.kt`
 
 ### 2.4 Advanced Class Features
 
