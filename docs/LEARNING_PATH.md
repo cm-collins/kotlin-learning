@@ -116,8 +116,8 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 - [x] Sealed classes and sealed interfaces - `sealed_classes.kt`
 - [x] Enum classes - `enum_classes.kt`
 - [x] Inline classes (value classes) - `value_classes.kt`
-- [x] Object declarations (singletons) - `singleton-(object_declaration)_classes.kt`
-- [x] Companion objects - `singleton-(object_declaration)_classes.kt`
+- [x] Object declarations (singletons) - `singleton-classes.kt`
+- [x] Companion objects - `singleton-classes.kt`
 - [x] Nested and inner classes - `inner_classes.kt`
 - [x] Anonymous objects - `anonymous_classes.kt`
 
@@ -181,6 +181,11 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 ---
 
 ## 🎯 Stage 4: Coroutines & Concurrency
+
+### 4.0 Threads (JVM foundation)
+
+- [x] `thread { }` and offloading work - `threads/thread.kt`
+- [x] When/how threads are used (mobile, backend, desktop) - `threads/thread.kt`
 
 ### 4.1 Coroutines Basics
 
@@ -801,7 +806,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 1 (Kotlin Fundamentals)**: 48/48 items completed (100%)
 **Stage 2 (OOP Kotlin)**: 19/43 items completed (44%)
 **Stage 3 (Functional Programming)**: 0/20 items completed (0%)
-**Stage 4 (Coroutines & Concurrency)**: 0/34 items completed (0%)
+**Stage 4 (Coroutines & Concurrency)**: 2/36 items completed (6%)
 **Stage 5 (Android Fundamentals)**: 0/33 items completed (0%)
 **Stage 6 (Jetpack Compose)**: 0/45 items completed (0%)
 **Stage 7 (Architecture & Design Patterns)**: 0/21 items completed (0%)
@@ -815,7 +820,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 15 (Production Readiness)**: 0/39 items completed (0%)
 **Stage 16 (Portfolio Projects)**: 0/36 items completed (0%)
 
-**Overall Progress**: 67/480 items completed (14%)
+**Overall Progress**: 69/482 items completed (14%)
 
 ---
 
@@ -851,11 +856,13 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 ## 📚 Next Steps
 
 1. Continue Stage 2 (OOP Kotlin) - you're 44% complete
-2. Next up: Interfaces, Delegation, Secondary constructors, Init blocks, Backing fields, lateinit, lazy
-3. Create exercises for each completed lesson
-4. Add tests for your exercises
+2. Next up: Secondary constructors, Init blocks, Backing fields, lateinit, lazy, visibility, generics
+3. Stage 4: Threads basics done; next: Coroutines (suspend, launch, async, Dispatchers)
+4. Create exercises for each completed lesson
 5. Update this file regularly to track progress
 
 ---
 
-**Last Updated**: 2026-02-02
+**Lesson locations**: `src/main/kotlin/lessons/fundamentals/`, `src/main/kotlin/lessons/classes_objects/`, `src/main/kotlin/lessons/threads/`
+
+**Last Updated**: 2026-02-17
