@@ -46,6 +46,34 @@
  *   physics, loading assets, or audio.
  * - Any app doing I/O (disk, network): do the blocking I/O on a background
  *   thread so the rest of the app stays responsive.
+ *
+ * ---------------------------------------------------------------------------
+ * PARALLELISM VS CONCURRENCY
+ * ---------------------------------------------------------------------------
+ *
+ * CONCURRENCY
+ * - Multiple tasks can make progress over a period of time; they may be
+ *   interleaved (e.g. one thread runs, then another) rather than at the
+ *   exact same instant.
+ * - Goal: structure the program so that several logical tasks can advance
+ *   without blocking each other (e.g. UI stays responsive while I/O runs).
+ * - This lesson demonstrates CONCURRENCY: main thread and worker thread
+ *   both make progress; the main thread doesn't wait for blockingCode() to
+ *   finish before printing "Finished blocking code".
+ *
+ * PARALLELISM
+ * - Multiple tasks actually execute at the same time (e.g. multiple CPU
+ *   cores running different threads simultaneously).
+ * - A subset of concurrency: you get parallelism when you have multiple
+ *   threads/processes and enough CPU cores to run them at once.
+ * - Example: splitting a huge list across 4 threads and each thread
+ *   processes a chunk on its own core = parallel + concurrent.
+ *
+ * In this file we use one extra thread, so we have concurrency (two threads
+ * making progress). On a multi-core machine the OS may run them in parallel;
+ * on a single core they are concurrent (interleaved). For mobile/backend,
+ * "don't block the main/request thread" is the main concurrency concern;
+ * parallelism is an optimization when you have heavy CPU work to spread.
  */
 
 import kotlin.concurrent.thread

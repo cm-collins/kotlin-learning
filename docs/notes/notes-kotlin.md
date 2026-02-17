@@ -195,6 +195,16 @@ Start
 
 ---
 
+## Concurrency & Parallelism
+
+- **Concurrency**: Multiple tasks make progress over time; they may be interleaved (e.g. one thread runs, then another). Goal: keep the program responsive (e.g. UI thread free while I/O runs).
+- **Parallelism**: Multiple tasks actually execute at the same time (multiple CPU cores). A form of concurrency when you have enough cores to run threads simultaneously.
+- In Kotlin/JVM, `thread { }` starts a new thread so work runs off the caller; that gives **concurrency**. On a multi-core machine the OS may run threads in **parallel**.
+- For mobile/backend, the main concern is *don’t block the main/request thread* (concurrency); parallelism is an optimization for heavy CPU work.
+- Lesson (with full notes and examples): `src/main/kotlin/lessons/threads/thread.kt`
+
+---
+
 ## Common Patterns
 
 ### Null Handling

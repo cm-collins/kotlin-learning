@@ -48,7 +48,7 @@ The IDE will automatically detect the Gradle project and configure it.
 
 ### Step 3: Run Your First Lesson
 
-1. Navigate to `src/main/kotlin/lessons/kotlin-lessons/`
+1. Navigate to `src/main/kotlin/lessons/fundamentals/`
 2. Open `Lesson01_Variables.kt`
 3. Right-click anywhere in the file
 4. Select **Run 'Lesson01_VariablesKt'**
@@ -83,13 +83,18 @@ Work through lessons in order:
 18. **Lesson18_Collection_Builders.kt** — buildList/buildSet/buildMap
 19. **Lesson19_Exception_Handling.kt** — try/catch/finally, throw, custom exceptions, Nothing, Java checked exceptions
 
-**Location**: `src/main/kotlin/lessons/kotlin-lessons/`
+**Location**: `src/main/kotlin/lessons/fundamentals/`
 
 > Note: Lesson 14 also includes a small Java file in `src/main/java/interop/` used to demonstrate platform types.
 
-### Optional (Recommended before Stage 3)
+### Optional (recommended before Stage 3)
 
 20. **Lesson20_Lambdas.kt** — Lambda basics, function types, higher-order functions, closures
+
+### Concurrency foundation (before Coroutines)
+
+21. **thread.kt** — `thread { }`, offloading work, when/how threads are used (mobile, backend), **concurrency vs parallelism**  
+**Location**: `src/main/kotlin/lessons/threads/thread.kt`
 
 ### Phase B: Object-Oriented Kotlin (Classes & Objects)
 
@@ -104,7 +109,7 @@ Work through class types in any order (they are self-contained):
 | 3 | `enum_classes.kt` | Enum constants, properties, methods, `when` exhaustive matching, `entries`/`valueOf` |
 | 4 | `sealed_classes.kt` | Sealed classes & interfaces, modeling state/results, exhaustive `when` |
 | 5 | `abstract_classes.kt` | Abstract members, `open`/`override`, inheritance, polymorphism |
-| 6 | `singleton-(object_declaration)_classes.kt` | `object`, `data object`, companion objects, object expressions |
+| 6 | `singleton-classes.kt` | `object`, `data object`, companion objects, object expressions |
 | 7 | `anonymous_classes.kt` | Object expressions for callbacks, listeners, adapters, comparators |
 | 8 | `inner_classes.kt` | Nested vs inner classes, accessing outer class members |
 | 9 | `value_classes.kt` | `@JvmInline value class`, type-safe wrappers, zero-overhead abstractions |
@@ -270,9 +275,10 @@ Use `docs/notes/progress.md` to track what you've learned:
 Once you complete Kotlin Fundamentals (Lessons 01-19) and Classes & Objects:
 
 1. **Review** `docs/notes/progress.md` and mark all completed items
-2. **Continue** Stage 2 — remaining items: Interfaces, Delegation, lateinit, lazy, Generics
-3. **Move to Stage 3**: Functional Programming in Kotlin
-4. **Eventually**: Coroutines, Android, and Kotlin Multiplatform
+2. **Continue** Stage 2 — remaining items: lateinit, lazy, visibility, Generics
+3. **Concurrency foundation**: Complete `threads/thread.kt` (threads, concurrency vs parallelism)
+4. **Move to Stage 3**: Functional Programming in Kotlin
+5. **Eventually**: Coroutines, Android, and Kotlin Multiplatform
 
 ---
 

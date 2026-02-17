@@ -815,6 +815,15 @@ fun `calculateTotal should return zero for empty list`() {
 
 ---
 
+## 16. Concurrency & Threading
+
+- **Concurrency vs parallelism**: Concurrency = multiple tasks making progress (possibly interleaved). Parallelism = multiple tasks executing at once (multiple cores). See `src/main/kotlin/lessons/threads/thread.kt` for definitions and examples.
+- **Don’t block the main/request thread**: Offload heavy or blocking work (I/O, CPU) to a background thread or coroutine so the UI or request handler stays responsive.
+- **On Android**: Prefer **coroutines** (e.g. `Dispatchers.IO`, `Dispatchers.Main`) over raw `thread { }` for structured concurrency, cancellation, and less boilerplate. Use threads when you need explicit JVM threads or are on plain JVM.
+- **Post results back to the right thread**: After background work, update UI or complete the request on the main/request thread (e.g. `runOnUiThread`, `withContext(Dispatchers.Main)`).
+
+---
+
 ## Quick Reference Checklist
 
 When writing Kotlin code, ask yourself:
@@ -829,6 +838,7 @@ When writing Kotlin code, ask yourself:
 - [ ] Am I avoiding Java-style code patterns?
 - [ ] Are my comments explaining "why" not "what"?
 - [ ] Am I using extension functions appropriately?
+- [ ] Am I offloading blocking/heavy work off the main (or request) thread?
 
 ---
 

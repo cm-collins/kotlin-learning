@@ -5,22 +5,22 @@
 
 ## Stage 1 — Kotlin Foundations (Language Core)
 
-- [x] Variables: `val` vs `var` → [Lesson01_Variables.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson01_Variables.kt)
-- [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson02_Types.kt)
-- [x] Strings: templates, common ops, formatting → [Lesson11_TypeConversion_And_Strings.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson11_TypeConversion_And_Strings.kt)
-- [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson03_Operators.kt)
-- [x] Control flow: if/else, when, while/do-while, break/continue → [Lesson05_ControlFlow.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson05_ControlFlow.kt)
-- [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson04_Functions.kt)
-- [x] Function parameters deep dive: defaults, named args, vararg, lambdas → [Lesson09_FunctionParameters.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson09_FunctionParameters.kt)
-- [x] Scope functions: let/apply/run/also/with → [Lesson10_Extension_Functions.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt)
-- [x] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson07_Arrays.kt)
-- [x] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson08_Lists.kt)
-- [x] Collections: Set + Map (mutable vs immutable) → [Lesson15_Sets_And_Maps.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson15_Sets_And_Maps.kt)
-- [x] Collection operations: map/filter/reduce/groupBy/partition/zip → [Lesson16_Collection_Operations.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson16_Collection_Operations.kt)
-- [x] Sequences (lazy ops) → [Lesson17_Sequences.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson17_Sequences.kt)
-- [x] Collection builders (buildList/buildSet/buildMap) → [Lesson18_Collection_Builders.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson18_Collection_Builders.kt)
-- [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson06_NullSafety.kt)
-- [x] Exceptions: try/catch, custom errors → [Lesson19_Exception_Handling.kt](../src/main/kotlin/lessons/kotlin-lessons/Lesson19_Exception_Handling.kt)
+- [x] Variables: `val` vs `var` → [Lesson01_Variables.kt](../../src/main/kotlin/lessons/fundamentals/Lesson01_Variables.kt)
+- [x] Types: Int/Long/Double/Float/Boolean/Char/String → [Lesson02_Types.kt](../../src/main/kotlin/lessons/fundamentals/Lesson02_Types.kt)
+- [x] Strings: templates, common ops, formatting → [Lesson11_TypeConversion_And_Strings.kt](../../src/main/kotlin/lessons/fundamentals/Lesson11_TypeConversion_And_Strings.kt)
+- [x] Operators: arithmetic, comparison, logical → [Lesson03_Operators.kt](../../src/main/kotlin/lessons/fundamentals/Lesson03_Operators.kt)
+- [x] Control flow: if/else, when, while/do-while, break/continue → [Lesson05_ControlFlow.kt](../../src/main/kotlin/lessons/fundamentals/Lesson05_ControlFlow.kt)
+- [x] Functions: params, returns, default args, named args → [Lesson04_Functions.kt](../../src/main/kotlin/lessons/fundamentals/Lesson04_Functions.kt)
+- [x] Function parameters deep dive: defaults, named args, vararg, lambdas → [Lesson09_FunctionParameters.kt](../../src/main/kotlin/lessons/fundamentals/Lesson09_FunctionParameters.kt)
+- [x] Scope functions: let/apply/run/also/with → [Lesson10_Extension_Functions.kt](../../src/main/kotlin/lessons/fundamentals/Lesson10_Extension_Functions.kt)
+- [x] Arrays: `Array<T>`, `IntArray`, iteration, conversions → [Lesson07_Arrays.kt](../../src/main/kotlin/lessons/fundamentals/Lesson07_Arrays.kt)
+- [x] Lists: `listOf`, `mutableListOf`, add/remove, iteration → [Lesson08_Lists.kt](../../src/main/kotlin/lessons/fundamentals/Lesson08_Lists.kt)
+- [x] Collections: Set + Map (mutable vs immutable) → [Lesson15_Sets_And_Maps.kt](../../src/main/kotlin/lessons/fundamentals/Lesson15_Sets_And_Maps.kt)
+- [x] Collection operations: map/filter/reduce/groupBy/partition/zip → [Lesson16_Collection_Operations.kt](../../src/main/kotlin/lessons/fundamentals/Lesson16_Collection_Operations.kt)
+- [x] Sequences (lazy ops) → [Lesson17_Sequences.kt](../../src/main/kotlin/lessons/fundamentals/Lesson17_Sequences.kt)
+- [x] Collection builders (buildList/buildSet/buildMap) → [Lesson18_Collection_Builders.kt](../../src/main/kotlin/lessons/fundamentals/Lesson18_Collection_Builders.kt)
+- [x] Null safety: `?`, `?:`, safe calls, smart casts → [Lesson06_NullSafety.kt](../../src/main/kotlin/lessons/fundamentals/Lesson06_NullSafety.kt)
+- [x] Exceptions: try/catch, custom errors → [Lesson19_Exception_Handling.kt](../../src/main/kotlin/lessons/fundamentals/Lesson19_Exception_Handling.kt)
 
 ## Stage 2 — Kotlin OOP + Modeling
 
@@ -30,7 +30,7 @@
 - [x] Sealed classes for state/result modeling → [sealed_classes.kt](../../src/main/kotlin/lessons/classes_objects/sealed_classes.kt)
 - [ ] Generics (basic)
 - [x] Extension functions + properties → [Lesson10_Extension_Functions.kt](../../src/main/kotlin/lessons/kotlin-lessons/Lesson10_Extension_Functions.kt)
-- [x] Object + companion object → [singleton-(object_declaration)_classes.kt](../../src/main/kotlin/lessons/classes_objects/singleton-(object_declaration)_classes.kt)
+- [x] Object + companion object → [singleton-classes.kt](../../src/main/kotlin/lessons/classes_objects/singleton-classes.kt)
 - [ ] Visibility modifiers + packages
 - [x] Enum classes → [enum_classes.kt](../../src/main/kotlin/lessons/classes_objects/enum_classes.kt)
 - [x] Abstract classes + inheritance → [abstract_classes.kt](../../src/main/kotlin/lessons/classes_objects/abstract_classes.kt)
@@ -38,6 +38,12 @@
 - [x] Nested + inner classes → [inner_classes.kt](../../src/main/kotlin/lessons/classes_objects/inner_classes.kt)
 - [x] Value classes (inline classes) → [value_classes.kt](../../src/main/kotlin/lessons/classes_objects/value_classes.kt)
 - [x] Annotation classes → [annotation_classes.kt](../../src/main/kotlin/lessons/classes_objects/annotation_classes.kt)
+
+## Concurrency foundation (threads, before Coroutines)
+
+- [x] `thread { }` and offloading work → [thread.kt](../../src/main/kotlin/lessons/threads/thread.kt)
+- [x] When/how threads are used (mobile, backend, desktop) → [thread.kt](../../src/main/kotlin/lessons/threads/thread.kt)
+- [x] Concurrency vs parallelism (definitions; this lesson = concurrent; parallelism = multiple cores) → [thread.kt](../../src/main/kotlin/lessons/threads/thread.kt)
 
 ## Stage 3 — Coroutines + Flow (Mobile-critical)
 
