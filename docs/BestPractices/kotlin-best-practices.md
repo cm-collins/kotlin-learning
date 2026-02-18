@@ -819,6 +819,7 @@ fun `calculateTotal should return zero for empty list`() {
 
 - **Concurrency vs parallelism**: Concurrency = multiple tasks making progress (possibly interleaved). Parallelism = multiple tasks executing at once (multiple cores). See `src/main/kotlin/lessons/threads/thread.kt` for definitions and examples.
 - **Don’t block the main/request thread**: Offload heavy or blocking work (I/O, CPU) to a background thread or coroutine so the UI or request handler stays responsive.
+- **Dispatchers**: Use `Dispatchers.Default` for CPU work, `Dispatchers.IO` for blocking I/O; use `withContext(Dispatchers.XXX) { }` to switch. See `src/main/kotlin/lessons/dispatchers_thread/dispatchers_threadpool.kt`.
 - **On Android**: Prefer **coroutines** (e.g. `Dispatchers.IO`, `Dispatchers.Main`) over raw `thread { }` for structured concurrency, cancellation, and less boilerplate. Use threads when you need explicit JVM threads or are on plain JVM.
 - **Post results back to the right thread**: After background work, update UI or complete the request on the main/request thread (e.g. `runOnUiThread`, `withContext(Dispatchers.Main)`).
 

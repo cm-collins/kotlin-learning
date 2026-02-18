@@ -202,11 +202,11 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 ### 4.2 Dispatchers & Threading
 
 - [ ] Dispatchers.Main (Android; not in plain JVM - see coroutines.kt notes)
-- [ ] Dispatchers.IO
-- [x] Dispatchers.Default - `coroutines/coroutines.kt`
+- [x] Dispatchers.IO (thread pool, when to use) - `dispatchers_thread/dispatchers_threadpool.kt`
+- [x] Dispatchers.Default - `coroutines/coroutines.kt`, `dispatchers_thread/dispatchers_threadpool.kt`
 - [ ] Dispatchers.Unconfined
-- [ ] Custom dispatchers
-- [ ] withContext for switching contexts
+- [ ] Custom dispatchers / limitedParallelism
+- [x] withContext for switching contexts (IO, Default) - `dispatchers_thread/dispatchers_threadpool.kt`
 
 ### 4.3 Coroutine Lifecycle
 
@@ -809,7 +809,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 1 (Kotlin Fundamentals)**: 48/48 items completed (100%)
 **Stage 2 (OOP Kotlin)**: 19/43 items completed (44%)
 **Stage 3 (Functional Programming)**: 0/20 items completed (0%)
-**Stage 4 (Coroutines & Concurrency)**: 8/39 items completed (21%)
+**Stage 4 (Coroutines & Concurrency)**: 10/39 items completed (26%)
 **Stage 5 (Android Fundamentals)**: 0/33 items completed (0%)
 **Stage 6 (Jetpack Compose)**: 0/45 items completed (0%)
 **Stage 7 (Architecture & Design Patterns)**: 0/21 items completed (0%)
@@ -823,7 +823,7 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 **Stage 15 (Production Readiness)**: 0/39 items completed (0%)
 **Stage 16 (Portfolio Projects)**: 0/36 items completed (0%)
 
-**Overall Progress**: 74/485 items completed (15%)
+**Overall Progress**: 76/485 items completed (16%)
 
 ---
 
@@ -860,12 +860,12 @@ A complete, sequential roadmap from Kotlin beginner to production-ready mobile e
 
 1. Continue Stage 2 (OOP Kotlin) - you're 44% complete
 2. Next up: Secondary constructors, Init blocks, Backing fields, lateinit, lazy, visibility, generics
-3. Stage 4: Threads + coroutines basics (suspend, launch, Dispatchers.Default) done in `coroutines/coroutines.kt`; next: async, structured concurrency, Flow
+3. Stage 4: Threads, coroutines (coroutines.kt), and dispatchers/thread pools (dispatchers_threadpool.kt) done; next: structured concurrency, Flow
 4. Create exercises for each completed lesson
 5. Update this file regularly to track progress
 
 ---
 
-**Lesson locations**: `src/main/kotlin/lessons/fundamentals/`, `src/main/kotlin/lessons/classes_objects/`, `src/main/kotlin/lessons/threads/`, `src/main/kotlin/lessons/coroutines/`
+**Lesson locations**: `src/main/kotlin/lessons/fundamentals/`, `src/main/kotlin/lessons/classes_objects/`, `src/main/kotlin/lessons/threads/`, `src/main/kotlin/lessons/coroutines/`, `src/main/kotlin/lessons/dispatchers_thread/`
 
 **Last Updated**: 2026-02-17

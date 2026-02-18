@@ -50,6 +50,8 @@
 - [x] suspend functions + runBlocking, launch → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
 - [x] CoroutineScope + Dispatchers.Default (JVM); note Main/IO on Android → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
 - [x] Sequential vs concurrent (one coroutine vs multiple launch) → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
+- [x] Dispatchers.Default vs IO (thread pools, when to use) → [dispatchers_threadpool.kt](../../src/main/kotlin/lessons/dispatchers_thread/dispatchers_threadpool.kt)
+- [x] withContext(Dispatchers.IO / Default) for switching → [dispatchers_threadpool.kt](../../src/main/kotlin/lessons/dispatchers_thread/dispatchers_threadpool.kt)
 - [ ] Structured concurrency, cancellation + timeouts
 - [ ] Exception handling in coroutines
 - [ ] Flow basics (cold stream)

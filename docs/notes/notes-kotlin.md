@@ -219,6 +219,17 @@ Start
 
 ---
 
+## Dispatchers & withContext
+
+- **Dispatcher** = decides which thread (or thread pool) runs a coroutine. Default and IO use **separate** shared pools.
+- **Dispatchers.Default**: CPU-bound work (sorting, parsing, math). Pool size ≈ CPU cores.
+- **Dispatchers.IO**: Blocking I/O (file, network, DB). Pool size 64 by default (JVM). Use for blocking calls; `delay()` does not block, so use Default for pure delays.
+- **Dispatchers.Main**: UI thread (Android/Swing); not in plain JVM console.
+- **withContext(Dispatchers.XXX) { }**: Run a block on another dispatcher and return to the caller with a result. Pattern: `withContext(Dispatchers.IO) { readFile() }` then use result on current context.
+- Lesson (Default vs IO, thread names, withContext examples): `src/main/kotlin/lessons/dispatchers_thread/dispatchers_threadpool.kt`
+
+---
+
 ## Common Patterns
 
 ### Null Handling
