@@ -47,9 +47,10 @@
 
 ## Stage 3 — Coroutines + Flow (Mobile-critical)
 
-- [ ] suspend functions + structured concurrency
-- [ ] Dispatchers + threading model
-- [ ] Cancellation + timeouts
+- [x] suspend functions + runBlocking, launch → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
+- [x] CoroutineScope + Dispatchers.Default (JVM); note Main/IO on Android → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
+- [x] Sequential vs concurrent (one coroutine vs multiple launch) → [coroutines.kt](../../src/main/kotlin/lessons/coroutines/coroutines.kt)
+- [ ] Structured concurrency, cancellation + timeouts
 - [ ] Exception handling in coroutines
 - [ ] Flow basics (cold stream)
 - [ ] Operators: map/filter/debounce/distinctUntilChanged

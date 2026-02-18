@@ -88,6 +88,12 @@ fun main() {
         println("Thread end")
     }
 
+    thread {
+        println("Thread start")
+        blockingCode()
+        println("Thread end")
+    }
+
     // This runs on the main thread, almost immediately (does not wait for the thread above).
     println("Finished blocking code")
 }

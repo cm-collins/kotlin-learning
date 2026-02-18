@@ -205,6 +205,20 @@ Start
 
 ---
 
+## Coroutines basics
+
+- **Coroutines** = lightweight concurrency: many coroutines can run on a few threads; code can suspend (pause) without blocking the thread.
+- **suspend fun**: Can only be called from a coroutine or another suspend function. Use for work that can pause (e.g. `delay`, I/O).
+- **runBlocking**: Blocks the current thread and runs the block as a coroutine. Use in `main()` or tests so the program waits; on Android use `lifecycleScope` / `viewModelScope` instead.
+- **launch**: Starts a new coroutine; returns a `Job`. Use `job.join()` to wait for it.
+- **CoroutineScope(Dispatchers.XXX).launch { }**: Starts a coroutine on the given dispatcher. On **JVM console** use `Dispatchers.Default` (Dispatchers.Main is for Android/UI). On **Android**: `Dispatchers.Main` (UI), `Dispatchers.IO` (disk/network), `Dispatchers.Default` (CPU).
+- **Sequential**: One coroutine, steps one after the other (total time = sum of steps).
+- **Concurrent**: Multiple coroutines at once (e.g. two `launch { }` in the same scope); total time ≈ longest task. Use `job.join()` so the caller waits for all children.
+- **delay(ms)**: Suspends the coroutine without blocking the thread.
+- Lesson (full KDoc + sequential vs concurrent cooking demo): `src/main/kotlin/lessons/coroutines/coroutines.kt`
+
+---
+
 ## Common Patterns
 
 ### Null Handling

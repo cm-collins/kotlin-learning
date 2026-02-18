@@ -96,6 +96,9 @@ Work through lessons in order:
 21. **thread.kt** — `thread { }`, offloading work, when/how threads are used (mobile, backend), **concurrency vs parallelism**  
 **Location**: `src/main/kotlin/lessons/threads/thread.kt`
 
+22. **coroutines.kt** — Coroutines: `suspend` functions, `runBlocking`, `launch`, `CoroutineScope`, `Dispatchers.Default`, **sequential vs concurrent** (cooking demo), `delay`  
+**Location**: `src/main/kotlin/lessons/coroutines/coroutines.kt`
+
 ### Phase B: Object-Oriented Kotlin (Classes & Objects)
 
 Work through class types in any order (they are self-contained):
@@ -276,9 +279,9 @@ Once you complete Kotlin Fundamentals (Lessons 01-19) and Classes & Objects:
 
 1. **Review** `docs/notes/progress.md` and mark all completed items
 2. **Continue** Stage 2 — remaining items: lateinit, lazy, visibility, Generics
-3. **Concurrency foundation**: Complete `threads/thread.kt` (threads, concurrency vs parallelism)
+3. **Concurrency**: Complete `threads/thread.kt` and `coroutines/coroutines.kt` (threads, concurrency vs parallelism, suspend, launch, sequential vs concurrent)
 4. **Move to Stage 3**: Functional Programming in Kotlin
-5. **Eventually**: Coroutines, Android, and Kotlin Multiplatform
+5. **Eventually**: More coroutines (async, Flow), Android, and Kotlin Multiplatform
 
 ---
 
